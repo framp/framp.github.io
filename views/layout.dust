@@ -1,14 +1,15 @@
 {?skipLayout}
 	{+main}{/main}
 {:else}
+	<!DOCTYPE html>
 	<html>
 	<head>
-		<meta charset="utf-8" />
-  		<meta name="viewport" content="width=device-width" />
+		<meta charset="utf-8"/>
+  		<meta name="viewport" content="width=device-width"/>
 		<title>{title}</title>
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	    <script src="js/main.js"></script>
-	    <link rel="stylesheet" type="text/css" href="css/main.css" />
+	    <script src="/js/main.js"></script>
+	    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
 	</head>
 	<body>{+main}{/main}</body>
 	</html>
