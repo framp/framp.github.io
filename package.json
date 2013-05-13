@@ -1,0 +1,25 @@
+{
+  "name": "framp.me",
+  "version": "0.0.1",
+  "description": "My personal website",
+  "author": "Federico Rampazzo <frampone@gmail.com> (http://framp.me)",
+  "scripts": {
+    "postinstall": "sh pre-commit.sh install"
+  },
+  "dependencies": {
+    "foundation": "*",
+    "stylus": "*",
+    "nib": "*",
+    "dustjs-linkedin": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-dustjs": "*",
+    "grunt-dust-html": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-stylus": "*",
+    "grunt-contrib-cssmin": "*"
+  }
+}
