@@ -1,0 +1,53 @@
+@import 'config'
+
+#tab-hello
+  background blackish
+  color clouds
+  width 100%
+  min-height 100%
+  display table
+  text-align center
+  
+  .wrapper-vertical
+    display table-cell
+    vertical-align middle
+  .wrapper-horizontal
+    display inline-block
+  #avatar
+    margin auto
+  #hello
+    margin-left 32px
+    #title
+      font-size 128px
+      margin-top 28px
+      font-family 'FranchiseBold'
+      text-transform uppercase
+    #description
+      font-family 'Fabrica'
+      font-size 16px
+    #social
+      font-family 'FontAwesome'
+      a
+        color clouds
+        font-size 64px
+        margin-right 16px
+      a:visited
+        color asbestos
+      a:hover
+        color silver
+  #avatar
+    height 320px
+    width 320px
+    border-radius 160px
+    background: url("http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=320") no-repeat;      
+
+@media only screen and (min-width: 900px)
+  #hello,#avatar
+    float left
+  #hello
+    margin-left 32px
+  #title,#description,#social
+    text-align left
+    
+    
+  

@@ -2,20 +2,32 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     dustjspkg: grunt.file.readJSON('node_modules/dustjs-linkedin/package.json'),
-    clean: ['js/lib/dust-core-*.js', 'js/src/templates.js', 'js/main.js', 'css/main.css'],
+    watch: {
+      scripts: {
+        files: ['js/**/*.js', 'css/**/*.styl', 'css/**/*.css', 'views/**/*.dust', 'data/**/*.json'],
+        tasks: ['default'],
+        options: {
+          spawn: false,
+        },
+      },
+    },
+    clean: ['js/vendor/dust-core-*.js', 'js/templates.js', 'js/main.js', 'css/main-stylus.css', 'css/main.css'],
     copy: {
       main: {
         files: [
-          {src: ['node_modules/dustjs-linkedin/dist/dust-core-<%= dustjspkg.version %>.js'], dest: 'js/lib/dust-core-<%= dustjspkg.version %>.js'}
+          {
+            src: ['node_modules/dustjs-linkedin/dist/dust-core-<%= dustjspkg.version %>.js'], 
+            dest: 'js/vendor/dust-core-<%= dustjspkg.version %>.js'
+          }
         ]
       }
     },
     dustjs: {
-    	compile: {
-    		files: {
-    			'js/src/templates.js': ['views/**/*.dust']
-    		}
-    	}
+      compile: {
+        files: {
+          'js/templates.js': ['views/**/*.dust']
+        }
+      }
     },
     dusthtml: {
       index: {
@@ -23,51 +35,52 @@ module.exports = function(grunt) {
         dest: "index.html",
         options: {
           basePath: "views",
-          context: "index.json"
+          context: "data/index.json"
         }
       }
     },
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy hh:mm:ss") %> */\n'
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy hh:mm:ss") %> */\n',
+        beautify: true
       },
       dist: {
         files: {
-          'js/main.js': ['js/lib/**/*.js', 'js/src/**/*.js']
+          'js/main.js': ['js/vendor/**/*.js', 'js/templates.js', 'js/src/**/*.js']
         }
       }
     },
     stylus: {
-    	compile: {
-    		options: {
-	    		paths: ['css'],
-	    		use: [ require('nib') ],
-	    	},
-	    	files: {
-	    		'css/stylus.css': ['css/**/*.styl']
-	    	}
-    	}
-    },
-    cssmin: {
-      add_banner: {
+      compile: {
         options: {
-          banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy hh:mm:ss") %> */'
+          paths: ['css'],
+          use: [ require('nib') ]
         },
         files: {
-          'css/main.css': ['css/lib/**/*.css', 'css/src/**/*.css']
+          'css/main-stylus.css': ['css/main.styl']
         }
       }
-    }
+    },
+    csso: {
+      dist: {
+        files: {
+          'css/main.css': ['css/**/*.css']
+        }
+      }
+    },
   });
 
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-dustjs');
   grunt.loadNpmTasks("grunt-dust-html");
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  //grunt.loadNpmTasks('grunt-contrib-stylus');
-  grunt.loadNpmTasks('grunt-contrib-cssmin'); 
+  grunt.loadNpmTasks('grunt-csso');
 
-  grunt.registerTask('default', ['clean', 'copy', 'dustjs', 'dusthtml', 'uglify', 'cssmin']);
+  grunt.registerTask('test', []);
+
+  grunt.registerTask('default', ['clean', 'copy', 'dustjs', 'dusthtml', 'uglify', 'stylus', 'csso']);
 
 };
