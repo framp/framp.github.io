@@ -1,4 +1,4 @@
-/*! framp.me 05-09-2013 02:09:34 */
+/*! framp.me 05-09-2013 03:09:57 */
 function getGlobal() {
     return function() {
         return this.dust;
