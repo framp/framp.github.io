@@ -3,7 +3,7 @@
 <div id="tab-hello">
   <div class="wrapper-vertical">
     <div class="wrapper-horizontal">
-      <div class="hexagon">
+      <div id="avatar" class="hexagon">
         <div class="hexagon-in1">
           <div class="hexagon-in2">
             <div class="hexagon-in2">
