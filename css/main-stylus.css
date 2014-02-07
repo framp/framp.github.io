@@ -15,13 +15,14 @@ html,body{width:100%;height:100%;margin:0;padding:0}
 #tab-hello .wrapper-vertical{display:table-cell;vertical-align:middle}
 #tab-hello .wrapper-horizontal{display:inline-block}
 #tab-hello #avatar{margin:auto}
-#tab-hello #hello #title{font-size:128px;margin-top:20px;font-family:'FranchiseBold';text-transform:uppercase}
+#tab-hello #hello #title{font-size:128px;margin-top:10px;font-family:'FranchiseBold';text-transform:uppercase}
 #tab-hello #hello #description{font-family:'Fabrica';font-size:16px}
 #tab-hello #hello #social{font-family:'FontAwesome';}
 #tab-hello #hello #social a{color:#ecf0f1;font-size:64px;line-height:75px;margin-right:25px}
 #tab-hello #hello #social a:visited{color:#7f8c8d}
 #tab-hello #hello #social a:hover{color:#bdc3c7}
-@media only screen and (min-width: 900px){#hello,#avatar{float:left}
-#hello{margin-left:32px}
-#title,#description,#social{text-align:left}
+@media only screen and (min-width: 900px){#tab-hello #hello,#tab-hello #avatar{float:left}
+#tab-hello #hello{margin-left:32px;}
+#tab-hello #hello #title{margin-top:28px}
+#tab-hello #hello #title,#tab-hello #hello #description,#tab-hello #hello #social{text-align:left}
 }
