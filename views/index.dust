@@ -18,7 +18,9 @@
       </div>
       <div id="hello">
         <div id="title">{title}</div>
-        <pre id="description">{description}</pre>
+        <pre id="description">
+          <p>{description}</p>
+        </pre>
         <div id="social">
           <a href="mailto:{email}?Subject=Hi%20Framp" class="icon-envelope-alt" target="_blank"></a>
           <a href="{github}" class="icon-github" target="_blank"></a>
