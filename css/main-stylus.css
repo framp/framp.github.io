@@ -6,6 +6,11 @@
 @font-face{font-family:'FranchiseBold';src:url("../fonts/FranchiseBold/franchise-bold-webfont.eot");src:url("../fonts/FranchiseBold/franchise-bold-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/FranchiseBold/franchise-bold-webfont.woff") format('woff'),url("../fonts/FranchiseBold/franchise-bold-webfont.ttf") format('truetype'),url("../fonts/FranchiseBold/franchise-bold-webfont.svg#franchisebold") format('svg');font-weight:normal;font-style:normal}
 html,body{width:100%;height:100%;margin:0;padding:0}
 .clear{clear:both}
+.hexagon{overflow:hidden;width:278px;height:319.7px;}
+.hexagon .hexagon-in1{width:100%;height:100%;overflow:hidden;-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.hexagon .hexagon-in2{width:100%;height:100%;overflow:hidden;-webkit-transform:rotate(-60deg);-moz-transform:rotate(-60deg);-o-transform:rotate(-60deg);-webkit-transform:rotate(-60deg);-moz-transform:rotate(-60deg);-o-transform:rotate(-60deg);-ms-transform:rotate(-60deg);transform:rotate(-60deg)}
+.hexagon .hexagon-in3{margin-top:58%;margin-left:50%;width:0;height:0;}
+.hexagon .hexagon-in3 img{margin-top:-160px;margin-left:-160px}
 #tab-hello{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background:#222;color:#ecf0f1;width:100%;height:100%;min-height:100%;display:table;text-align:center;}
 #tab-hello .wrapper-vertical{display:table-cell;vertical-align:middle}
 #tab-hello .wrapper-horizontal{display:inline-block}
@@ -16,7 +21,6 @@ html,body{width:100%;height:100%;margin:0;padding:0}
 #tab-hello #hello #social a{color:#ecf0f1;font-size:64px;margin-right:16px}
 #tab-hello #hello #social a:visited{color:#7f8c8d}
 #tab-hello #hello #social a:hover{color:#bdc3c7}
-#tab-hello #avatar{height:320px;width:320px;-webkit-border-radius:160px;border-radius:160px;background:url("http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=320") no-repeat}
 @media only screen and (min-width: 900px){#hello,#avatar{float:left}
 #hello{margin-left:32px}
 #title,#description,#social{text-align:left}
