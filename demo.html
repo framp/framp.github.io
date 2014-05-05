@@ -10,6 +10,8 @@ html,body{
   padding:0;
   background: #a03535; 
   text-align: center; 
+}
+.artworks, .ground{
   padding:5px;
 }
 
@@ -17,31 +19,39 @@ html,body{
 .art-2{ padding:0 25px 30px 25px; }
 .art-3{ padding:0 50px 5px 0; }
 .art-4{ padding:0 50px 20px 0px; }
-.art-5{ padding:0 20px 15px 30px; }
+.art-5{ padding:0 20px 25px 30px; }
 .art-6{ padding:0 10px 0px 40px; }
-.art-7{ padding:0 25px 5px 25px; }
+.art-7{ padding:0 25px 15px 25px; }
 
 .artworks {
   margin-bottom: -60px;
+}
+
+.floor{
+  min-height: 100px;
+  margin-top: -25px;
+  background: #6f2525;
 }
 </style>
 </head>
 <body>
 <div class="artworks">
-<object class="art-1" data="img/artwork.svg" type="image/svg+xml"></object>
-<object class="art-2" data="img/artwork.svg" type="image/svg+xml"></object>
-<object class="art-3" data="img/artwork.svg" type="image/svg+xml"></object>
-<object class="art-4" data="img/artwork.svg" type="image/svg+xml"></object>
-<br>
-<br>
-<object class="art-5" data="img/artwork.svg" type="image/svg+xml"></object>
-<object class="art-6" data="img/mirror.svg" type="image/svg+xml"></object>
-<object class="art-7" data="img/artwork.svg" type="image/svg+xml"></object>
+  <object class="art-1" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
+  <object class="art-2" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
+  <object class="art-3" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
+  <object class="art-4" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
+  <br>
+  <br>
+  <object class="art-5" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
+  <object class="art-6" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
+  <object class="art-7" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
 </div>
-<object data="img/gramophone.svg" type="image/svg+xml"></object>
-<object data="img/sofa.svg" type="image/svg+xml"></object>
-<object data="img/table.svg" type="image/svg+xml"></object>
-<object data="img/lamp.svg" type="image/svg+xml"></object>
-
+<div class="ground">
+  <object data="img/red-studio/gramophone.svg" type="image/svg+xml"></object>
+  <object data="img/red-studio/sofa.svg" type="image/svg+xml"></object>
+  <object data="img/red-studio/table.svg" type="image/svg+xml"></object>
+  <object data="img/red-studio/lamp.svg" type="image/svg+xml"></object>
+</div>
+<div class="floor"></div>
 </body>
 </html>
