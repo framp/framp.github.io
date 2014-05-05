@@ -8,7 +8,7 @@ html,body{width:100%;height:100%;margin:0;padding:0}
 .hexagon .hexagon-in2 img{margin-left:-20px}
 #tab-hello{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background:#222;color:#ecf0f1;width:100%;height:100%;min-height:100%;display:table;text-align:center;}
 #tab-hello .wrapper-vertical{display:table-cell;vertical-align:middle}
-#tab-hello .wrapper-horizontal{display:inline-block}
+#tab-hello .wrapper-horizontal{display:inline-block;overflow:hidden}
 #tab-hello #avatar{margin:auto;margin-top:10px}
 #tab-hello #hello #title{font-size:128px;font-family:'FranchiseBold';text-transform:uppercase}
 #tab-hello #hello #description{font-family:'Lato';font-size:20px}
