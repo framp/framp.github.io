@@ -22,8 +22,8 @@
     height 320px
     width 320px
     border-radius 160px
-    background: url("http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=320") no-repeat;    
   #hello
+    animation fadein 2s
     #title
       font-size 128px
       font-family 'FranchiseBold'
@@ -42,6 +42,9 @@
         color asbestos
       a:hover
         color silver
+.no-js #avatar, #avatar.loaded
+  background: url("http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=320") no-repeat;  
+  animation fadein 2s
 
 @media only screen and (min-width: 900px)
   #tab-hello
