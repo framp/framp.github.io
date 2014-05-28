@@ -14,19 +14,19 @@ html,body{width:100%;height:100%;margin:0;padding:0;font-family:Lato,sans-serif;
 }#tab-hello{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background:#111;color:#ecf0f1;width:100%;height:100%;min-height:100%;display:table;text-align:center;}
 #tab-hello .wrapper-vertical{display:table-cell;vertical-align:middle}
 #tab-hello .wrapper-horizontal{display:inline-block;overflow:hidden}
-#tab-hello #avatar{margin:auto;margin-top:20px;height:320px;width:320px;-webkit-border-radius:160px;border-radius:160px}
+#tab-hello #avatar{margin:auto;margin-top:20px;height:280px;width:280px;-webkit-border-radius:140px;border-radius:140px}
 #tab-hello #hello{-webkit-animation:fadein 2s;-moz-animation:fadein 2s;-o-animation:fadein 2s;-ms-animation:fadein 2s;animation:fadein 2s;}
 #tab-hello #hello #title{margin-top:10px;font-size:100px;line-height:100px;word-spacing:-20px;font-family:'Annie Use Your Telescope';font-weight:800;text-transform:uppercase}
-#tab-hello #hello #description{font-size:20px}
+#tab-hello #hello #description{font-size:20px;margin-top:5px}
 #tab-hello #hello #social{font-family:'FontAwesome';margin-bottom:30px;}
-#tab-hello #hello #social a{color:#ecf0f1;font-size:64px;line-height:75px;margin-right:25px}
+#tab-hello #hello #social a{color:#ecf0f1;font-size:52px;line-height:75px;margin-right:25px}
 #tab-hello #hello #social a:visited{color:#7f8c8d}
 #tab-hello #hello #social a:hover{color:#bdc3c7}
-.no-js #avatar,#avatar.loaded{background:url("http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=320") no-repeat;-webkit-animation:fadein 2s;-moz-animation:fadein 2s;-o-animation:fadein 2s;-ms-animation:fadein 2s;animation:fadein 2s}
+.no-js #avatar,#avatar.loaded{background:url("http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280") no-repeat;-webkit-animation:fadein 2s;-moz-animation:fadein 2s;-o-animation:fadein 2s;-ms-animation:fadein 2s;animation:fadein 2s}
 @media only screen and (min-width: 900px){#tab-hello #hello,#tab-hello #avatar{float:left}
 #tab-hello #avatar{margin-top:0}
-#tab-hello #hello{margin-left:32px;}
-#tab-hello #hello #title{margin-top:28px}
+#tab-hello #hello{margin-left:45px;}
+#tab-hello #hello #title{margin-top:36px}
 #tab-hello #hello #social{margin-bottom:0}
 #tab-hello #hello #title,#tab-hello #hello #description,#tab-hello #hello #social{text-align:left}
 }
