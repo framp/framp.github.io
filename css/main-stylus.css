@@ -14,7 +14,7 @@ html,body{width:100%;height:100%;margin:0;padding:0;font-family:Lato,sans-serif;
 }#tab-hello{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background:#111;color:#ecf0f1;width:100%;height:100%;min-height:100%;display:table;text-align:center;}
 #tab-hello .wrapper-vertical{display:table-cell;vertical-align:middle}
 #tab-hello .wrapper-horizontal{display:inline-block;overflow:hidden}
-#tab-hello #avatar{margin:auto;margin-top:20px;height:280px;width:280px;-webkit-border-radius:140px;border-radius:140px}
+#tab-hello #avatar{margin:auto;margin-top:30px;height:280px;width:280px;-webkit-border-radius:140px;border-radius:140px}
 #tab-hello #hello{-webkit-animation:fadein 2s;-moz-animation:fadein 2s;-o-animation:fadein 2s;-ms-animation:fadein 2s;animation:fadein 2s;}
 #tab-hello #hello #title,#tab-hello #hello #description,#tab-hello #hello #social{padding:15px}
 #tab-hello #hello #title{margin-top:10px;font-size:100px;line-height:100px;word-spacing:-20px;font-family:'Annie Use Your Telescope';font-weight:800;text-transform:uppercase}
