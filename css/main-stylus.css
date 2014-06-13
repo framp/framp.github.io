@@ -1,5 +1,5 @@
 @font-face{font-family:'FontAwesome';src:url("../fonts/FontAwesome/fontawesome-webfont.eot?v=3.2.1");src:url("../fonts/FontAwesome/fontawesome-webfont.eot?#iefix&v=3.2.1") format('embedded-opentype'),url("../fonts/FontAwesome/fontawesome-webfont.woff?v=3.2.1") format('woff'),url("../fonts/FontAwesome/fontawesome-webfont.ttf?v=3.2.1") format('truetype'),url("../fonts/FontAwesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1") format('svg');font-weight:normal;font-style:normal}
-html,body{width:100%;height:100%;margin:0;padding:0;font-family:Lato,sans-serif;font-width:400;-moz-font-feature-settings:"calt=1, liga=1, clig=1, kern=1";-moz-font-feature-settings:"calt" 1,"liga" 1,"clig" 1,"kern" 1;-ms-font-feature-settings:"calt","liga","clig","kern";-o-font-feature-settings:"calt","liga","clig","kern";-webkit-font-feature-settings:"calt","liga","clig","kern";font-feature-settings:"calt","liga","clig","kern";text-rendering:optimizeLegibility}
+html,body{width:100%;height:100%;margin:0;padding:0;font-family:Abel,sans-serif;font-width:400;-moz-font-feature-settings:"calt=1, liga=1, clig=1, kern=1";-moz-font-feature-settings:"calt" 1,"liga" 1,"clig" 1,"kern" 1;-ms-font-feature-settings:"calt","liga","clig","kern";-o-font-feature-settings:"calt","liga","clig","kern";-webkit-font-feature-settings:"calt","liga","clig","kern";font-feature-settings:"calt","liga","clig","kern";text-rendering:optimizeLegibility}
 .clear{clear:both}
 @-moz-keyframes fadein{0%{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}
 100%{opacity:1;-ms-filter:none;filter:none}
@@ -17,8 +17,8 @@ html,body{width:100%;height:100%;margin:0;padding:0;font-family:Lato,sans-serif;
 #tab-hello #avatar{margin:auto;margin-top:30px;height:280px;width:280px;-webkit-border-radius:140px;border-radius:140px;-webkit-background-clip:padding;-moz-background-clip:padding;background-clip:padding-box}
 #tab-hello #hello{-webkit-animation:fadein 2s;-moz-animation:fadein 2s;-o-animation:fadein 2s;-ms-animation:fadein 2s;animation:fadein 2s;}
 #tab-hello #hello #title,#tab-hello #hello #description,#tab-hello #hello #social{padding:15px}
-#tab-hello #hello #title{margin-top:10px;font-size:100px;line-height:100px;word-spacing:-20px;font-family:'Annie Use Your Telescope';font-weight:800;text-transform:uppercase}
-#tab-hello #hello #description{font-size:20px;margin-top:5px}
+#tab-hello #hello #title{margin-top:10px;margin-left:-7px;font-size:90px;line-height:100px;font-weight:800;text-transform:uppercase}
+#tab-hello #hello #description{font-size:20px;margin-top:5px;margin-left:-2px}
 #tab-hello #hello #social{font-family:'FontAwesome';margin-bottom:30px;}
 #tab-hello #hello #social a{color:#ecf0f1;font-size:52px;line-height:75px;margin:0 12px 0 12px}
 #tab-hello #hello #social a:visited{color:#7f8c8d}
