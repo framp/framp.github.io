@@ -37,6 +37,14 @@ module.exports = function(grunt) {
           basePath: "views",
           context: "data/index.json"
         }
+      },
+      porfolio: {
+        src: "views/portofolio/index.dust",
+        dest: "portfolio/index.html",
+        options: {
+          basePath: "views",
+          context: "data/index.json"
+        }
       }
     },
     uglify: {
@@ -81,6 +89,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('test', []);
 
-  grunt.registerTask('default', ['clean', 'copy', 'dustjs', 'dusthtml', 'uglify', 'stylus', 'csso']);
+  grunt.registerTask('default', ['clean', 'copy', 'dustjs', 'uglify', 'stylus', 'csso', 'dusthtml']);
 
 };

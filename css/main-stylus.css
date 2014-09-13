@@ -1,5 +1,5 @@
 @font-face{font-family:'FontAwesome';src:url("../fonts/FontAwesome/fontawesome-webfont.eot?v=3.2.1");src:url("../fonts/FontAwesome/fontawesome-webfont.eot?#iefix&v=3.2.1") format('embedded-opentype'),url("../fonts/FontAwesome/fontawesome-webfont.woff?v=3.2.1") format('woff'),url("../fonts/FontAwesome/fontawesome-webfont.ttf?v=3.2.1") format('truetype'),url("../fonts/FontAwesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1") format('svg');font-weight:normal;font-style:normal}
-html,body{width:100%;height:100%;margin:0;padding:0;font-family:Abel,sans-serif;font-width:400;-moz-font-feature-settings:"calt=1, liga=1, clig=1, kern=1";-moz-font-feature-settings:"calt" 1,"liga" 1,"clig" 1,"kern" 1;-ms-font-feature-settings:"calt","liga","clig","kern";-o-font-feature-settings:"calt","liga","clig","kern";-webkit-font-feature-settings:"calt","liga","clig","kern";font-feature-settings:"calt","liga","clig","kern";text-rendering:optimizeLegibility}
+html,body{width:100%;height:100%;margin:0;padding:0;font-family:Open Sans,sans-serif;font-width:400;-moz-font-feature-settings:"calt=1, liga=1, clig=1, kern=1";-moz-font-feature-settings:"calt" 1,"liga" 1,"clig" 1,"kern" 1;-ms-font-feature-settings:"calt","liga","clig","kern";-o-font-feature-settings:"calt","liga","clig","kern";-webkit-font-feature-settings:"calt","liga","clig","kern";font-feature-settings:"calt","liga","clig","kern";text-rendering:optimizeLegibility}
 .clear{clear:both}
 @-moz-keyframes fadein{0%{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}
 100%{opacity:1;-ms-filter:none;filter:none}
@@ -17,8 +17,8 @@ html,body{width:100%;height:100%;margin:0;padding:0;font-family:Abel,sans-serif;
 #tab-hello #avatar{margin:auto;margin-top:30px;height:280px;width:280px;-webkit-border-radius:140px;border-radius:140px;-webkit-background-clip:padding;-moz-background-clip:padding;background-clip:padding-box}
 #tab-hello #hello{-webkit-animation:fadein 2s;-moz-animation:fadein 2s;-o-animation:fadein 2s;-ms-animation:fadein 2s;animation:fadein 2s;}
 #tab-hello #hello #title,#tab-hello #hello #description,#tab-hello #hello #social{padding:15px}
-#tab-hello #hello #title{margin-top:10px;margin-left:-7px;font-size:90px;line-height:100px;font-weight:800;text-transform:uppercase}
-#tab-hello #hello #description{font-size:20px;margin-top:5px;margin-left:-2px}
+#tab-hello #hello #title{margin-top:10px;font-size:65px;line-height:100px;font-weight:800;text-transform:uppercase}
+#tab-hello #hello #description{font-size:13px;font-weight:600;text-transform:uppercase;margin-top:0}
 #tab-hello #hello #social{font-family:'FontAwesome';margin-bottom:30px;}
 #tab-hello #hello #social a{color:#ecf0f1;font-size:52px;line-height:75px;margin:0 12px 0 12px}
 #tab-hello #hello #social a:visited{color:#7f8c8d}
@@ -31,4 +31,15 @@ html,body{width:100%;height:100%;margin:0;padding:0;font-family:Abel,sans-serif;
 #tab-hello #hello #title{margin-top:36px}
 #tab-hello #hello #social{margin-bottom:0}
 #tab-hello #hello #title,#tab-hello #hello #description,#tab-hello #hello #social{text-align:left;padding:0}
-}
+}#tab-hello.folded{min-height:0;position:absolute;left:50%;top:50%;display:block;padding-top:60px;padding-left:50px;-webkit-transform:scale(.1);-moz-transform:scale(.1);-o-transform:scale(.1);-ms-transform:scale(.1);transform:scale(.1);width:850px;-webkit-transition:width 2s, height 2s, -webkit-transform 2s;-moz-transition:width 2s, height 2s, -moz-transform 2s;-o-transition:width 2s, height 2s, -o-transform 2s;-ms-transition:width 2s, height 2s, -ms-transform 2s;transition:width 2s, height 2s, transform 2s;-webkit-transform:scale(.1);-moz-transform:scale(.1);-o-transform:scale(.1);-ms-transform:scale(.1);transform:scale(.1)}
+#tab-red-studio{width:100%;height:100%;background:#6f2525;}
+#tab-red-studio .artworks,#tab-red-studio .ground{background:#a03535;padding:5px}
+#tab-red-studio .artworks{margin-bottom:-60px}
+#tab-red-studio .art-1{padding:0 25px 10px 25px}
+#tab-red-studio .art-2{padding:0 25px 30px 25px}
+#tab-red-studio .art-3{padding:0 50px 5px 0}
+#tab-red-studio .art-4{padding:0 50px 20px 0}
+#tab-red-studio .art-5{padding:0 20px 25px 30px}
+#tab-red-studio .art-6{padding:0 10px 0 40px}
+#tab-red-studio .art-7{padding:0 25px 15px 25px}
+#tab-red-studio .floor{min-height:50px;margin-top:-25px;background:#6f2525}

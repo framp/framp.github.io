@@ -1,0 +1,23 @@
+{>layout/}
+{<main}
+<div id="tab-red-studio">
+  <div class="artworks">
+    <object class="art-1" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
+    <object class="art-2" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
+    <object class="art-3" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
+    <object class="art-4" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
+    <br>
+    <br>
+    <object class="art-5" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
+    <object class="art-6" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
+    <object class="art-7" data="img/red-studio/artwork.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="ground">
+    <object data="img/red-studio/gramophone.svg" type="image/svg+xml"></object>
+    <object data="img/red-studio/sofa.svg" type="image/svg+xml"></object>
+    <object data="img/red-studio/table.svg" type="image/svg+xml"></object>
+    <object data="img/red-studio/lamp.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="floor"></div>
+</div>
+{/main}
