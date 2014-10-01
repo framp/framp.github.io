@@ -1,4 +1,4 @@
-/*! framp.me 14-09-2014 12:09:25 */
+/*! framp.me 01-10-2014 10:10:21 */
 document.documentElement.className = "", function() {
     var a = new Image();
     a.onload = function() {
