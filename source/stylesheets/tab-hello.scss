@@ -1,0 +1,112 @@
+@import 'config';
+
+#tab-hello{
+  user-select: none;
+  background: $blackish;
+  color: $clouds;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: table;
+  text-align: center;
+  
+  .wrapper-vertical{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .wrapper-horizontal{
+    display: inline-block;
+    overflow: hidden;
+  }
+  #avatar{
+    margin: auto;
+    margin-top: 30px;
+    height: 280px;
+    width: 280px;
+    border-radius: 140px;
+    background-clip: padding-box;
+  }
+  #hello{
+    animation: fadein 2s;
+    #title, #description, #social{
+      padding: 15px;
+    }
+    #title{
+      margin-top: 10px;
+      font-family: $header-font;
+      font-size: 65px;
+      line-height: 80px;
+    }
+    #description{
+      font-size: 17px;
+      margin-bottom: 0px;
+    }
+    #social{
+      font-family: $icon-font;
+      margin-bottom: 30px;
+      a{
+        color: $clouds;
+        font-size: 52px;
+        line-height: 75px;
+        height: 75px;
+        margin: 0 12px 0 12px;
+        text-decoration: none;
+      }
+      a:visited{
+        color: $asbestos;
+      }
+      a:hover{
+        color: $silver;
+      }
+      .first{
+        margin-left: 0;
+      }
+    }
+  }
+}
+#tab-hello.folded{
+  min-height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  padding-top: 60px;
+  padding-left: 50px;
+  transform: scale(0.1);
+  width: 850px;
+  transition: width 2s, height 2s, transform 2s;
+  transform: scale(0.1);
+}
+.no-js #avatar, #avatar.loaded{
+  background: $asbestos url("http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280") no-repeat;
+  animation: fadein 2s;
+}
+
+@media only screen and (min-width: 900px){
+  #tab-hello{
+    #hello,#avatar{
+      float: left;
+    }
+    #avatar{
+      margin-top: 0px;
+    }
+    #hello{
+      margin-left: 45px;
+      #title{
+        margin-top: 36px;
+      }
+      #social{
+        margin-bottom: 0px;
+      }
+      #title,#description,#social{
+        text-align: left;
+        padding: 0;
+      }
+      #description{
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width"/>
+  <title>{{tr "meta.title"}}</title>
+  <meta name="description" content="{{tr "meta.description"}}" />
+  <meta name="twitter:card" value="summary">
+  <meta property="og:title" content="{{tr "meta.title"}}" />
+  <meta property="og:image" content="{{tr "meta.image"}}" />
+  <meta property="og:description" content="{{tr "meta.description"}}" />
+  
+  <meta name="viewport" content="width=device-width"/>
+  <link href="//fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:400,600,800" rel="stylesheet" type="text/css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/stylesheets/index{{#unless __debug}}.v{{__version}}.min{{/unless}}.css" />
+</head>
+<body>
+  {{#block "body"}}{{/block}}
+  {{> analytics}}
+</body>
+</html>

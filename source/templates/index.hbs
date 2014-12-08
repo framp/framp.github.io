@@ -1,0 +1,26 @@
+{{#extend "main"}}{{#content "body"}}
+  
+<div id="tab-hello">
+  <div class="wrapper-vertical">
+    <div class="wrapper-horizontal">
+      <div id="avatar"></div>
+      <div id="hello">
+        <div id="title">{{tr "title"}}</div>
+        <p id="description">{{tr "description"}}</p>
+        <div id="social">
+          <a href="mailto:{{email}}?Subject=Hi%20Framp" class="fa fa-envelope-o first" target="_blank"></a>
+          <a href="{{github}}" class="fa fa-github" target="_blank"></a>
+          <a href="{{bitbucket}}" class="fa fa-bitbucket" target="_blank"></a>
+          <a href="{{facebook}}" class="fa fa-facebook-square" target="_blank"></a>
+          <a href="{{plus}}" class="fa fa-google-plus" target="_blank"></a>
+          <a href="{{twitter}}" class="fa fa-twitter" target="_blank"></a>
+          <a href="{{linkedin}}" class="fa fa-linkedin" target="_blank"></a>
+        </div>
+      </div>
+      
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+  
+{{/content}}{{/extend}}
