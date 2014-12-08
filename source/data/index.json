@@ -1,12 +1,10 @@
 {
-  "title": "Hi, I'm Framp"
-, "description": "Federico Rampazzo, a developer who likes to build cool stuff."
-, "location": "London, UK"
-, "email": "hi@framp.me"
-, "github": "https://github.com/framp"
-, "bitbucket": "https://bitbucket.org/framp"
-, "facebook": "https://www.facebook.com/framp1"
-, "plus": "https://plus.google.com/+FedericoRampazzo"
-, "twitter": "https://twitter.com/framp"
-, "linkedin": "https://uk.linkedin.com/in/framp"
+  "location": "London, UK",
+  "email": "hi@framp.me",
+  "github": "https://github.com/framp",
+  "bitbucket": "https://bitbucket.org/framp",
+  "facebook": "https://www.facebook.com/framp1",
+  "plus": "https://plus.google.com/+FedericoRampazzo",
+  "twitter": "https://twitter.com/framp",
+  "linkedin": "https://uk.linkedin.com/in/framp"
 }

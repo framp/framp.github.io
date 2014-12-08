@@ -63,7 +63,7 @@ module.exports = function(gulp, $) {
             __language: {}
           };
           var name = file.path.replace(templateNameRegex, '');
-          var dataPath = './data' + path + '.json';
+          var dataPath = './data' + name + '.json';
           var partialsPath = './contents/' + language + '/partials.toml';
           var languagePath = './contents/' + language + name + '.toml';
           _.merge(result, readJSONSync(dataPath));
