@@ -1,0 +1,1 @@
+require('./tab-hello.js');
