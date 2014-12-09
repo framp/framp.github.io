@@ -1,15 +1,20 @@
+@import 'config';
+
 #tab-red-studio{
   width: 100%;
   height: 100%;
-  background: #6f2525;
+  background: $redfloor;
   text-align: center;
 
   .artworks, .ground{
-    background: #a03535;
+    background: $redwall;
     padding: 5px;
   }
   .artworks{
     margin-bottom: -60px;
+    img{
+      animation-name: fadeInDown;
+    }
   }
   .art-1{
     padding: 0 25px 10px 25px;
@@ -32,10 +37,14 @@
   .art-7{
     padding: 0 25px 15px 25px;
   }
-
+  
+  .ground img{
+    animation-name: fadeInUp;
+  }
+  
   .floor{
     min-height: 50px;
     margin-top: -25px;
-    background: #6f2525;
+    background: $redfloor;
   }
 }

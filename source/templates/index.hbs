@@ -1,10 +1,11 @@
 {{#extend "main"}}{{#content "body"}}
   
 <div id="tab-hello">
+  {{> menu}}
   <div class="wrapper-vertical">
     <div class="wrapper-horizontal">
-      <div id="avatar"></div>
-      <div id="hello">
+      <img id="avatar" src="{{image}}">
+      <div id="hello" class="scene-element">
         <div id="title">{{tr "title"}}</div>
         <p id="description">{{tr "description"}}</p>
         <div id="social">

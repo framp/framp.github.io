@@ -23,6 +23,7 @@ module.exports = function(gulp, $) {
           errLogToConsole: true,
           includePaths: [$.root + '/bower_components']
         }))
+        .pipe(autoprefixer())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest($.dest + '/stylesheets'))
         .pipe(connect.reload());

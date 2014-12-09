@@ -25,9 +25,10 @@
     width: 280px;
     border-radius: 140px;
     background-clip: padding-box;
+    opacity: 0;
   }
   #hello{
-    animation: fadein 2s;
+    animation-name: fadeInUp;
     #title, #description, #social{
       padding: 15px;
     }
@@ -64,22 +65,13 @@
     }
   }
 }
-#tab-hello.folded{
-  min-height: 0;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  display: block;
-  padding-top: 60px;
-  padding-left: 50px;
-  transform: scale(0.1);
-  width: 850px;
-  transition: width 2s, height 2s, transform 2s;
-  transform: scale(0.1);
-}
 .no-js #avatar, #avatar.loaded{
-  background: $asbestos url("http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280") no-repeat;
-  animation: fadein 2s;
+  background-repeat: no-repeat;
+  animation-duration: 1s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  opacity: 1;
 }
 
 @media only screen and (min-width: 900px){

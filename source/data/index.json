@@ -1,4 +1,5 @@
 {
+  "image": "http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280",
   "location": "London, UK",
   "email": "hi@framp.me",
   "github": "https://github.com/framp",
@@ -6,5 +7,10 @@
   "facebook": "https://www.facebook.com/framp1",
   "plus": "https://plus.google.com/+FedericoRampazzo",
   "twitter": "https://twitter.com/framp",
-  "linkedin": "https://uk.linkedin.com/in/framp"
+  "linkedin": "https://uk.linkedin.com/in/framp",
+  "menu": [
+    { "name": "menu-past", "url": "/past" },
+    { "name": "menu-red-studio", "url": "/red-studio" },
+    { "name": "menu-future", "url": "/future" }
+  ]
 }
