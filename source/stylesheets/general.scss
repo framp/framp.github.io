@@ -63,4 +63,13 @@ html,body{
 
 .menu{
   display:none;
+  position: fixed;
+  z-index: 100; 
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 900px){
+  
 }

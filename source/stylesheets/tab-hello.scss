@@ -41,6 +41,7 @@
     #description{
       font-size: 17px;
       margin-bottom: 0px;
+      line-height: 25px;
     }
     #social{
       font-family: $icon-font;
@@ -76,6 +77,9 @@
 
 @media only screen and (min-width: 900px){
   #tab-hello{
+    .wrapper-horizontal{
+      min-width: 900px;
+    }
     #hello,#avatar{
       float: left;
     }
