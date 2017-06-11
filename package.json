@@ -1,0 +1,28 @@
+{
+  "name": "framp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "preact test",
+    "lint": "standard",
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build --production --prerender && mv build/* . && rmdir build",
+    "serve": "preact build --production --prerender && mv build/* . && rmdir build && preact serve --dir .",
+    "dev": "preact watch --prerender"
+  },
+  "keywords": [],
+  "author": "Federico Rampazzo <frampone@gmail.com>",
+  "license": "MIT",
+  "private": "true",
+  "devDependencies": {
+    "if-env": "^1.0.0",
+    "preact-cli": "^1.1.1",
+    "standard": "^10.0.2"
+  },
+  "dependencies": {
+    "preact": "^8.1.0",
+    "preact-compat": "^3.16.0",
+    "preact-router": "^2.5.2"
+  }
+}

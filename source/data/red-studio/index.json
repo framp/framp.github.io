@@ -1,7 +1,0 @@
-{
-  "menu": [
-    { "name": "menu-me", "url": "/" },
-    { "name": "menu-past", "url": "/past" },
-    { "name": "menu-future", "url": "/future" }
-  ]
-}
