@@ -1,7 +1,24 @@
-@import '~style/helpers';
+.homepage {
+  composes: hero is-fullheight from '../../style/bulma.css';
+  background: #111;
+}
+.content {
+  composes: hero-body from '../../style/bulma.css';
 
-.home {
-	padding: 56px 20px;
-	min-height: 100%;
-	width: 100%;
+}
+.container {
+  composes: container has-text-centered from '../../style/bulma.css';
+}
+.title {
+	font-family: 'Open Sans';
+  font-weight: 800;
+  color: #DDD;
+  padding-bottom: 20px;
+  composes: title from '../../style/bulma.css';
+}
+.subtitle {
+	font-family: 'Source Sans Pro';
+  font-weight: 300;
+  color: #EEE;
+  composes: subtitle from '../../style/bulma.css';
 }
