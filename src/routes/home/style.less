@@ -1,24 +1,41 @@
 .homepage {
-  composes: hero is-fullheight from '../../style/bulma.css';
   background: #111;
-}
-.content {
-  composes: hero-body from '../../style/bulma.css';
-
-}
-.container {
-  composes: container has-text-centered from '../../style/bulma.css';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
 }
 .title {
 	font-family: 'Open Sans';
+  font-size: 32px;
   font-weight: 800;
   color: #DDD;
-  padding-bottom: 20px;
-  composes: title from '../../style/bulma.css';
+  user-select: none;
+  margin: 0;
 }
 .subtitle {
 	font-family: 'Source Sans Pro';
+  font-size: 20px;
   font-weight: 300;
+  margin-top: 17px;
+  margin-bottom: 25px;
   color: #EEE;
-  composes: subtitle from '../../style/bulma.css';
+  user-select: none;
+}
+.location {
+	font-family: 'Open Sans';
+  font-weight: 800;
+  font-size: 50%;
+  color: #DDD;
+  vertical-align: top;
+}
+.invisible {
+  color: #111;
+}
+
+.homepage a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }

@@ -33,17 +33,15 @@ const whatsapp = <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" w
 
 export default () =>
 	<section class={style.homepage}>
-		<div class={style.content}>
-			<div class={style.container}>
-				<h1 class={style.title}>FRAMP</h1>
-				<h2 class={style.subtitle}>Federico Rampazzo</h2>
-				<p>
-					<a href="mailto:hi@framp.me?Subject=Hi+Framp">{mail}</a>
-					<a href="https://github.com/framp">{github}</a>
-					<a href="https://uk.linkedin.com/in/framp">{linkedin}</a>
-					<a href="https://twitter.com/framp">{twitter}</a>
-					<a href="https://api.whatsapp.com/send?phone=447821814477">{whatsapp}</a>
-				</p>
+		<div class={style.container}>
+			<h1 class={style.title}>FRAMP</h1>
+			<h2 class={style.subtitle}><span class={`${style.location} ${style.invisible}`}>LONDON</span> Federico Rampazzo <span class={style.location}>LONDON</span></h2>
+			<div>
+				<a href="mailto:hi@framp.me?Subject=Hi+Framp">{mail}</a>
+				<a href="https://github.com/framp">{github}</a>
+				<a href="https://uk.linkedin.com/in/framp">{linkedin}</a>
+				<a href="https://twitter.com/framp">{twitter}</a>
+				<a href="https://api.whatsapp.com/send?phone=447821814477">{whatsapp}</a>
 			</div>
 		</div>
 		{Menu()}
