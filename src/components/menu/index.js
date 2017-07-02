@@ -2,16 +2,10 @@ import { h, Component } from 'preact';
 import { Link } from 'preact-router/match';
 import style from './style';
 
-export default () =>
-	<div class={style.menu}>
-		<nav class={style.navigation}>
-			<div class={style.container}>
-				<ul>
-					<li class={style.active}><a>Contact</a></li>
-					<li class={style.blue}><a href="/past">Experience</a></li>
-					<li class={style.red}><a href="/present">Things I like</a></li>
-					<li class={style.green}><a href="/future">Goals</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+export default (active) =>
+		<div class={style.menu}>
+			<a class={`${style.contact} ${active === 'contact' ? style.active : ''}`} href="/">Contact</a> 
+			<a class={`${style.experience} ${active === 'experience' ? style.active : ''}`} href="/experience">Experience</a> 
+			<a class={`${style.blog} ${active === 'blog' ? style.active : ''}`} href="/blog">Blog</a> 
+			<a class={`${style.projects} ${active === 'projects' ? style.active : ''}`} href="/projects">projects</a> 
+		</div>
