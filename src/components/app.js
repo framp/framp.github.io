@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
-import Home from '../routes/home';
+import Contact from '../routes/contact';
 import Experience from '../routes/experience';
 import Blog from '../routes/blog';
 import Article from '../routes/article';
@@ -20,7 +20,7 @@ export default class App extends Component {
 		return (
 			<div id="app">
 				<Router onChange={this.handleRoute}>
-					<Home path="/" />
+					<Contact path="/" />
 					<Experience path="/experience" />
 					<Projects path="/projects" />
 					<Blog path="/blog" />

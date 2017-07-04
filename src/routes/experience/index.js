@@ -6,14 +6,15 @@ import { mail, github, linkedin, twitter, whatsapp } from '../../components/soci
 export default () =>
 	<section class={style.experience}>
 		<div class={style.container}>
-			<h1 class={style.title}>FRAMP</h1>
-			<div class={style.social}>
-				<a href="mailto:hi@framp.me?Subject=Hi+Framp">{mail}</a>
-				<a href="https://github.com/framp">{github}</a>
-				<a href="https://uk.linkedin.com/in/framp">{linkedin}</a>
-				<a href="https://twitter.com/framp">{twitter}</a>
-				<a href="https://api.whatsapp.com/send?phone=447821814477">{whatsapp}</a>
-			</div>
+			<h2>work in progress <i>noun</i></h2>
+			<p><i>noun</i>: work in progress;</p>
+			<p><i>plural noun</i>: works in progress</p>
+			<ul>
+				<li>an unfinished project that is still being added to or developed. 
+					<quote>"the book itself is still a work in progress"</quote></li>
+				<li>(in accounting) the total value of the materials and labour for unfinished projects.
+					<quote>"the board had estimated the value of its work in progress as £6,145"</quote></li>
+			</ul>
 		</div>
-		{Menu('experience')}
+		{Menu(['contact'], 'experience')}
 	</section>

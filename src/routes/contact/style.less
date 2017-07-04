@@ -1,0 +1,49 @@
+@import "../../style/colors";
+@import "../../style/animations";
+
+.contact {
+  background: @nearly_black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  .social a:hover {
+    border-bottom: 1px solid white; 
+  }
+  .title {
+    font-family: 'Open Sans';
+    font-size: 32px;
+    font-weight: 800;
+    color: darken(white, 13.5);
+    user-select: none;
+    margin: 0;
+  }
+  .subtitle {
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 17px;
+    margin-bottom: 25px;
+    color: darken(white, 6.5);
+    user-select: none;
+    .location {
+      font-family: 'Open Sans';
+      font-weight: 800;
+      font-size: 50%;
+      color: darken(white, 13.5);
+      vertical-align: top;
+    }
+    .location.invisible {
+      color: @nearly_black;
+    }
+  }
+  .title, .subtitle, .social {
+    animation-name: slideDown;
+    animation-duration: 0.2s;
+  }
+  .social {
+    animation-name: slideUp;
+  }
+}

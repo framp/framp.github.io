@@ -1,5 +1,121 @@
 @import "../../style/colors";
+@import "../../style/animations";
 
 .projects {
-  background: @pomegranate;
+  .wall {
+    background: @red_wall;
+    min-height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    .container {
+      width: 100%;
+    }
+    .artworks {
+      width: 750px;
+      margin: auto;
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-end;
+      animation-name: slideDown;
+      animation-duration: 0.2s;
+      a {
+        padding: 20px;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        position:relative;
+        svg {
+          display: block;
+          margin: auto;
+          margin-bottom: 10px;
+        }
+        h3 {
+          color: @red_floor;
+          font-family: "Open Sans";
+          font-weight: 800;
+          font-size: 15px;
+          padding-bottom: 3px;
+          text-transform: uppercase;
+          display:inline;
+        }
+        p {
+          position: absolute;
+          display: none;
+          opacity: 0;
+          transition: opacity 0.2s;
+          background-color: hsla(0, 0%, 20%, 0.9);
+          color:white;
+          font-family: 'Source Sans Pro';
+          font-weight: 300;
+          font-size: 15px;
+          border-radius: 3px;
+          padding: 10px;
+          margin-left: -14px;
+          z-index:1;
+        }
+        p::before {
+          position: absolute;
+          bottom: 100%;
+          left: 50%;
+          width: 0;
+          border-bottom: 5px solid #000;
+          border-bottom: 5px solid hsla(0, 0%, 20%, 0.9);
+          border-right: 5px solid transparent;
+          border-left: 5px solid transparent;
+          content: " ";
+          font-size: 0;
+          line-height: 0;
+        }
+      }
+      a:hover {
+        h3 {
+          border-bottom: 1px solid @red_floor;
+        }
+        p {
+          display: block;
+          opacity: 1;
+        }
+      }
+    }
+    >svg {
+      margin-top: -50px;
+      margin-right: 2px;
+      margin-left: 2px;
+      margin-bottom: -20px;
+      animation-name: slideUp;
+      animation-duration: 0.2s;
+    }
+  }
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  min-height: 100%;
+  background: @red_floor;
+}
+
+@media (max-width: 799px) { 
+  .projects {
+    .wall {
+      .artworks {
+        width: 100%;
+        a {
+          width: 100%;
+          p {
+            position: relative;
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+            opacity: 1;
+            max-width: 200px;
+          }
+        }
+      }
+      >svg {
+        display: none;
+      }
+    }
+  }
 }

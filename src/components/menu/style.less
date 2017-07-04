@@ -1,7 +1,6 @@
 @import "../../style/colors";
 
 .menu {
-  display: none;
   a {
     display: block;
     width: 250px;
@@ -13,22 +12,27 @@
     justify-content: center;
     align-items: flex-end;
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-family: 'Open Sans';
     font-size: 20px;
     padding:5px;
     font-weight: 800;
     text-transform: uppercase;
+    transition: width 0.2s, height 0.2s
+  }
+  a:hover {
+    width: 300px;
+    height: 300px;
   }
   a.active {
     display:none;
   }
   .contact {
-    background: #111;
+    background: @nearly_black;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
   .contact:hover {
-    background: #444;
+    background: @dark_grey;
   }
   .experience {
     background: @belize_hole;
@@ -41,16 +45,16 @@
     background: @peter_river;
   }
   .blog {
-    background: @emerald;
+    background: @nephritis;
     left: auto;
     right: 0;
     transform: translate(50%, -50%) rotate(45deg);
   }
   .blog:hover { 
-    background: @nephritis;
+    background: @emerald;
   }
   .projects {
-    background: @pomegranate;
+    background: @red_wall;
     top: auto;
     left: auto;
     right: 0;
@@ -59,14 +63,43 @@
     transform: translate(50%, 50%) rotate(-45deg);
   }
   .projects:hover {
-    background: @alizarin;
+    background: lighten(@red_wall, 5);
   }
 }
+.menu.experience{
+  a {
+    background: darken(@belize_hole, 10);
+  }
+  a:hover {
+    background: darken(@belize_hole, 5);
+  }
+}
+.menu.projects{
+  a {
+    background: darken(@red_wall, 10);
+  }
+  a:hover {
+    background: darken(@red_wall, 5);
+  }
+}
+.menu.blog{
+  a {
+    background: darken(@nephritis, 10);
+  }
+  a:hover {
+    background: darken(@nephritis, 5);
+  }
+}
+
 
 @media (max-width: 599px) { 
   .menu a {
     width: 120px;
     height: 120px;
     font-size: 12px;
+  }
+  .menu a:hover {
+    width: 170px;
+    height: 170px;
   }
 }
