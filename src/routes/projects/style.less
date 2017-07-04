@@ -45,8 +45,6 @@
         p {
           position: absolute;
           display: none;
-          opacity: 0;
-          transition: opacity 0.2s;
           background-color: hsla(0, 0%, 20%, 0.9);
           color:white;
           font-family: 'Source Sans Pro';
@@ -77,7 +75,8 @@
         }
         p {
           display: block;
-          opacity: 1;
+          animation-name: fadeIn;
+          animation-duration: 0.2s;     
         }
       }
     }
@@ -90,7 +89,7 @@
       animation-duration: 0.2s;
     }
   }
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   box-sizing: border-box;
   min-height: 100%;
   background: @red_floor;
@@ -111,6 +110,9 @@
             opacity: 1;
             max-width: 200px;
           }
+        }
+        a:hover p {
+          animation-duration: 0s;
         }
       }
       >svg {

@@ -21,22 +21,22 @@ const projects = [{
 		link: 'http://framp.me/joi-tester'
 	}, { 
 		name: 'Timetabling', 
-		description: 'A library to solve the timetabling problem',
+		description: 'A genetic algorithm to solve one of the timetabling problem',
 		image: calendar,
 		link: 'https://github.com/framp/timetabling-solver' 
 	}, { 
 		name: 'Fontina', 
-		description: 'An old library to generate @font-face ready fonts',
+		description: 'An old module to generate @font-face ready fonts',
 		image: fontina,
 		link: 'http://framp.me/fontina' 
 	}, { 
 		name: 'Porfolio', 
-		description: 'An old jQuery-based 3d-flipping book',
+		description: 'An old jQuery-based 3d book with flippable pages',
 		image: book,
 		link: 'http://framp.me/portfolio' 
 	}, { 
 		name: 'Say Something', 
-		description: 'A serverless tool to create and share powerful messages',
+		description: 'A serverless desktop-only tool to create and share powerful messages',
 		image: bubble,
 		link: 'http://framp.me/say-something' 
 	}]
