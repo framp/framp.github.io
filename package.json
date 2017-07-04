@@ -7,7 +7,7 @@
     "test": "preact test",
     "lint": "standard",
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "npm run clean && preact build --production --prerender --template src/template.html && cp src/assets/favicon.ico build && mv build/* . && rmdir build",
+    "build": "npm run clean && preact build --production --prerender --prerender-urls src/prerender-urls.json --template src/template.html && cp src/assets/favicon.ico build && mv build/* . && rmdir build",
     "clean": "find . -not -name CNAME -not -name src -not -name package.json -not -name node_modules -not -name . -not -name .. -not -name .git -not -name .gitignore -maxdepth 1 -print0 | xargs -0 rm -rf",
     "serve": "npm run build && rmdir build && preact serve --dir .",
     "dev": "preact watch --prerender --template src/template.html"
