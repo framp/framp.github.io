@@ -1,0 +1,2 @@
+webpackJsonp([4],{"/iSb":function(){},Of6y:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var c=t("KM04"),i=(t.n(c),t("/iSb")),u=t.n(i);n.default=function(){return Object(c.h)("section",{class:u.a.article})}}});
+//# sourceMappingURL=route-article.chunk.24b05.js.map

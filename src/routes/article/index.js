@@ -1,7 +1,4 @@
-import { h, Component } from 'preact';
-import style from './style';
+import { h, Component } from "preact";
+import style from "./style";
 
-export default () =>
-	<section class={style.article}>
-		
-	</section>
+export default () => <section class={style.article} />;
