@@ -51,7 +51,7 @@ const projects = [
     link: "http://framp.me/fontina"
   },
   {
-    name: "Porfolio",
+    name: "Portfolio",
     description: "An old jQuery-based 3d book with flippable pages",
     image: book,
     link: "http://framp.me/portfolio"
