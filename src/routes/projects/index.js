@@ -15,10 +15,25 @@ import {
   code,
   bubble,
   database,
-  book
+  book,
+  frappe,
+  lock,
 } from "../../components/pictures";
 
 const projects = [
+  {
+    name: "Frappe",
+    description: "A library for defining UI components based on time and events",
+    image: frappe,
+    link: "http://framp.me/frappe"
+  },
+  {
+    name: "Paillier in set ZKP",
+    description:
+      "Generates a Zero Knowledge Proof that an encrypted value is in a set of known values",
+    image: lock,
+    link: "https://github.com/framp/paillier-in-set-zkp"
+  },
   {
     name: "Sudoku",
     description: "A sudoku UI written in elm",
