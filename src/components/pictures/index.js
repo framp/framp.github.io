@@ -143,7 +143,11 @@ export const lock = [
 ];
 
 export const brainBookshelf = (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 160">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 250 160"
+    style="width:250px"
+  >
     <defs>
       <clipPath id="a">
         <path d="M110.2-.4h991.7v675.7H110.2z" />
