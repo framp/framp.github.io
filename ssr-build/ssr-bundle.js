@@ -562,20 +562,6 @@ var mail = Object(preact_min["h"])(
     "stroke-width": "24"
   })
 );
-var twitter = Object(preact_min["h"])(
-  "svg",
-  {
-    viewBox: "0 0 512 512",
-    xmlns: "http://www.w3.org/2000/svg",
-    width: "48",
-    height: "48"
-  },
-  Object(preact_min["h"])("rect", { fill: "#111", height: "512", rx: "15%", width: "512" }),
-  Object(preact_min["h"])("path", {
-    d: "m456 133c-14 7-31 11-47 13 17-10 30-27 37-46-15 10-34 16-52 20-61-62-157-7-141 75-68-3-129-35-169-85-22 37-11 86 26 109-13 0-26-4-37-9 0 39 28 72 65 80-12 3-25 4-37 2 10 33 41 57 77 57-42 30-77 38-122 34 170 111 378-32 359-208 16-11 30-25 41-42z",
-    fill: "#fff"
-  })
-);
 var whatsapp = Object(preact_min["h"])(
   "svg",
   {
@@ -618,12 +604,6 @@ var _ref3 = Object(preact_min["h"])(
 
 var _ref4 = Object(preact_min["h"])(
   "a",
-  { href: "https://twitter.com/framp" },
-  twitter
-);
-
-var _ref5 = Object(preact_min["h"])(
-  "a",
   { href: "https://api.whatsapp.com/send?phone=447821814477" },
   whatsapp
 );
@@ -662,8 +642,7 @@ var _ref5 = Object(preact_min["h"])(
         contact__ref,
         _ref2,
         _ref3,
-        _ref4,
-        _ref5
+        _ref4
       )
     ),
     menu(["blog", "experience", "projects"], "contact")
@@ -1471,7 +1450,7 @@ var app__ref3 = Object(preact_min["h"])(routes_projects, { path: "/projects" });
 
 var app__ref4 = Object(preact_min["h"])(blog, { path: "/blog" });
 
-var app__ref5 = Object(preact_min["h"])(routes_article, { path: "/blog/:article" });
+var _ref5 = Object(preact_min["h"])(routes_article, { path: "/blog/:article" });
 
 var app_App = function (_Component) {
   _inherits(App, _Component);
@@ -1506,7 +1485,7 @@ var app_App = function (_Component) {
         app__ref2,
         app__ref3,
         app__ref4,
-        app__ref5
+        _ref5
       )
     );
   };

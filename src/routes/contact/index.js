@@ -21,7 +21,6 @@ export default () => (
         <a href="mailto:hi@framp.me?Subject=Hi+Framp">{mail}</a>
         <a href="https://github.com/framp">{github}</a>
         <a href="https://uk.linkedin.com/in/framp">{linkedin}</a>
-        <a href="https://twitter.com/framp">{twitter}</a>
         <a href="https://api.whatsapp.com/send?phone=447821814477">
           {whatsapp}
         </a>
