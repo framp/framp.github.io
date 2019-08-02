@@ -5,13 +5,26 @@ import {
   mail,
   github,
   linkedin,
-  twitter,
   whatsapp
 } from "../../components/social";
+
+class PreloadedAvatar extends Component {
+  componentDidMount() {
+    const img = new Image();
+    img.src = "http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280";
+    img.onload = () => {
+      this.setState({ loaded: true });
+    }
+  }
+  render() {
+    return <div class={`${style.avatar} ${this.state.loaded ? style.loaded : ''}`}></div>
+  }
+}
 
 export default () => (
   <section class={style.contact}>
     <div class={style.container}>
+      <PreloadedAvatar />
       <h1 class={style.title}>FRAMP</h1>
       <h2 class={style.subtitle}>
         <span class={`${style.location} ${style.invisible}`}>LONDON</span>{" "}

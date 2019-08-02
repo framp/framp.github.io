@@ -9,6 +9,20 @@
   align-items: center;
   text-align: center;
   height: 100%;
+  .avatar {
+    margin: auto;
+    margin-top: -310px;
+    margin-bottom: 30px;
+    height: 280px;
+    width: 280px;
+    border-radius: 140px;
+    background-clip: padding-box;
+  }
+  .avatar.loaded, .no-js .avatar{
+    background: @asbestos url("http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280") no-repeat;
+    animation-name: fadeIn;
+    animation-duration: 0.2s;
+  }
   .social a:hover {
     border-bottom: 1px solid white; 
   }
@@ -45,4 +59,24 @@
   .social {
     animation-name: slideUp;
   }
+}
+
+@media (max-height: 890px) { 
+  .contact .avatar.loaded, .no-js .contact .avatar {
+    margin-top: -210px;
+    height: 180px;
+    width: 180px;
+    border-radius: 90px;
+    background-size: 180px;
+  } 
+}
+
+@media (max-height: 590px) { 
+  .contact .avatar.loaded, .no-js .contact .avatar {
+    margin-top: -170px;
+    height: 140px;
+    width: 140px;
+    border-radius: 70px;
+    background-size: 140px;
+  } 
 }

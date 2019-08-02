@@ -1,6 +1,6 @@
 {
   "name": "Framp",
-  "short_name": "Preact PWA",
+  "short_name": "Framp",
   "display": "standalone",
   "orientation": "portrait",
   "start_url": "/",

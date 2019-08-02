@@ -77,7 +77,7 @@ module.exports =
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"contact":"contact__1INyY","social":"social__1bWFE","title":"title__1sHLG","subtitle":"subtitle__e4UUq","location":"location__AHAAZ","invisible":"invisible__2-dkv","slideDown":"slideDown__ylBtS","slideUp":"slideUp__N6TkU","fadeIn":"fadeIn__2I9bl"};
+module.exports = {"contact":"contact__1INyY","avatar":"avatar__1Rpr8","loaded":"loaded__2hTce","no-js":"no-js__14O-q","fadeIn":"fadeIn__2I9bl","social":"social__1bWFE","title":"title__1sHLG","subtitle":"subtitle__e4UUq","location":"location__AHAAZ","invisible":"invisible__2-dkv","slideDown":"slideDown__ylBtS","slideUp":"slideUp__N6TkU"};
 
 /***/ }),
 
@@ -580,29 +580,64 @@ var whatsapp = Object(preact_min["h"])(
 // CONCATENATED MODULE: ./routes/contact/index.js
 
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 
 
 
-var contact__ref = Object(preact_min["h"])(
+
+
+var contact_PreloadedAvatar = function (_Component) {
+  _inherits(PreloadedAvatar, _Component);
+
+  function PreloadedAvatar() {
+    _classCallCheck(this, PreloadedAvatar);
+
+    return _possibleConstructorReturn(this, _Component.apply(this, arguments));
+  }
+
+  PreloadedAvatar.prototype.componentDidMount = function componentDidMount() {
+    var _this2 = this;
+
+    var img = new Image();
+    img.src = "http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280";
+    img.onload = function () {
+      _this2.setState({ loaded: true });
+    };
+  };
+
+  PreloadedAvatar.prototype.render = function render() {
+    return Object(preact_min["h"])("div", { "class": contact_style_default.a.avatar + " " + (this.state.loaded ? contact_style_default.a.loaded : '') });
+  };
+
+  return PreloadedAvatar;
+}(preact_min["Component"]);
+
+var contact__ref = Object(preact_min["h"])(contact_PreloadedAvatar, null);
+
+var _ref2 = Object(preact_min["h"])(
   "a",
   { href: "mailto:hi@framp.me?Subject=Hi+Framp" },
   mail
 );
 
-var _ref2 = Object(preact_min["h"])(
+var _ref3 = Object(preact_min["h"])(
   "a",
   { href: "https://github.com/framp" },
   github
 );
 
-var _ref3 = Object(preact_min["h"])(
+var _ref4 = Object(preact_min["h"])(
   "a",
   { href: "https://uk.linkedin.com/in/framp" },
   linkedin
 );
 
-var _ref4 = Object(preact_min["h"])(
+var _ref5 = Object(preact_min["h"])(
   "a",
   { href: "https://api.whatsapp.com/send?phone=447821814477" },
   whatsapp
@@ -615,6 +650,7 @@ var _ref4 = Object(preact_min["h"])(
     Object(preact_min["h"])(
       "div",
       { "class": contact_style_default.a.container },
+      contact__ref,
       Object(preact_min["h"])(
         "h1",
         { "class": contact_style_default.a.title },
@@ -639,10 +675,10 @@ var _ref4 = Object(preact_min["h"])(
       Object(preact_min["h"])(
         "div",
         { "class": contact_style_default.a.social },
-        contact__ref,
         _ref2,
         _ref3,
-        _ref4
+        _ref4,
+        _ref5
       )
     ),
     menu(["blog", "experience", "projects"], "contact")
@@ -1427,11 +1463,11 @@ var objects = {
 // CONCATENATED MODULE: ./components/app.js
 
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function app__classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function app__possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function app__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 
 
@@ -1450,23 +1486,23 @@ var app__ref3 = Object(preact_min["h"])(routes_projects, { path: "/projects" });
 
 var app__ref4 = Object(preact_min["h"])(blog, { path: "/blog" });
 
-var _ref5 = Object(preact_min["h"])(routes_article, { path: "/blog/:article" });
+var app__ref5 = Object(preact_min["h"])(routes_article, { path: "/blog/:article" });
 
 var app_App = function (_Component) {
-  _inherits(App, _Component);
+  app__inherits(App, _Component);
 
   function App() {
     var _temp, _this, _ret;
 
-    _classCallCheck(this, App);
+    app__classCallCheck(this, App);
 
     for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _Component.call.apply(_Component, [this].concat(args))), _this), _this.handleRoute = function (e) {
+    return _ret = (_temp = (_this = app__possibleConstructorReturn(this, _Component.call.apply(_Component, [this].concat(args))), _this), _this.handleRoute = function (e) {
       _this.currentUrl = e.url;
-    }, _temp), _possibleConstructorReturn(_this, _ret);
+    }, _temp), app__possibleConstructorReturn(_this, _ret);
   }
   /** Gets fired when the route changes.
    *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
@@ -1485,7 +1521,7 @@ var app_App = function (_Component) {
         app__ref2,
         app__ref3,
         app__ref4,
-        _ref5
+        app__ref5
       )
     );
   };
