@@ -562,20 +562,20 @@ var mail = Object(preact_min["h"])(
     "stroke-width": "24"
   })
 );
-var whatsapp = Object(preact_min["h"])(
+var phone = Object(preact_min["h"])(
   "svg",
   {
-    viewBox: "0 0 512 512",
+    viewBox: "0 0 32 32",
     xmlns: "http://www.w3.org/2000/svg",
     width: "48",
-    height: "48"
+    height: "48",
+    fill: "none",
+    stroke: "#fff",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round",
+    "stroke-width": "2"
   },
-  Object(preact_min["h"])("rect", { fill: "#111", height: "512", rx: "15%", width: "512" }),
-  Object(preact_min["h"])("path", {
-    d: "m456 251a196 196 0 0 1 -291 170l-109 35 35-105a196 196 0 0 1 168-295c109 0 197 87 197 195zm-196-164c-91 0-165 74-165 164 0 36 11 69 31 96l-21 61 64-20a165 165 0 0 0 256-137c0-90-74-164-165-164zm99 209c-1-2-5-3-9-6l-33-15c-5-2-8-3-11 2l-15 19c-3 3-6 3-11 1s-20-8-39-24c-14-12-24-28-26-33-3-5-1-7 2-10l7-8 5-8c1-3 1-6-1-8l-14-36c-4-9-8-8-11-8h-9c-4 0-9 1-13 6-5 5-17 16-17 40 0 23 17 46 19 49 3 3 34 53 83 72s49 13 57 12c9-1 29-11 33-23 4-11 4-20 3-22z",
-    fill: "#fff",
-    "fill-rule": "evenodd"
-  })
+  Object(preact_min["h"])("path", { d: "M21 2 L11 2 C10 2 9 3 9 4 L9 28 C9 29 10 30 11 30 L21 30 C22 30 23 29 23 28 L23 4 C23 3 22 2 21 2 Z M9 5 L23 5 M9 27 L23 27" })
 );
 // CONCATENATED MODULE: ./routes/contact/index.js
 
@@ -611,7 +611,7 @@ var contact_PreloadedAvatar = function (_Component) {
   };
 
   PreloadedAvatar.prototype.render = function render() {
-    return Object(preact_min["h"])("div", { "class": contact_style_default.a.avatar + " " + (this.state.loaded ? contact_style_default.a.loaded : '') });
+    return Object(preact_min["h"])("div", { "class": contact_style_default.a.avatar + " " + (this.state.loaded ? contact_style_default.a.loaded : "") });
   };
 
   return PreloadedAvatar;
@@ -639,8 +639,8 @@ var _ref4 = Object(preact_min["h"])(
 
 var _ref5 = Object(preact_min["h"])(
   "a",
-  { href: "https://api.whatsapp.com/send?phone=447821814477" },
-  whatsapp
+  { href: "tel:+447821814477" },
+  phone
 );
 
 /* harmony default export */ var contact = (function () {
@@ -693,14 +693,6 @@ var experience_style_default = /*#__PURE__*/__webpack_require__.n(experience_sty
 
 
 
-/* import {
-  mail,
-  github,
-  linkedin,
-  twitter,
-  whatsapp
-} from '../../components/social'
-*/
 
 var experience__ref = Object(preact_min["h"])(
   "h2",

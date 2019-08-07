@@ -1,14 +1,7 @@
 import { h, Component } from "preact";
 import style from "./style";
 import Menu from "../../components/menu";
-/* import {
-  mail,
-  github,
-  linkedin,
-  twitter,
-  whatsapp
-} from '../../components/social'
-*/
+
 export default () => (
   <section class={style.experience}>
     <div class={style.container}>
