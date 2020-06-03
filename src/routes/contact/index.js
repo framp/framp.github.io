@@ -7,7 +7,7 @@ class PreloadedAvatar extends Component {
   componentDidMount() {
     const img = new Image();
     img.src =
-      "http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280";
+      "https://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280";
     img.onload = () => {
       this.setState({ loaded: true });
     };

@@ -604,7 +604,7 @@ var contact_PreloadedAvatar = function (_Component) {
     var _this2 = this;
 
     var img = new Image();
-    img.src = "http://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280";
+    img.src = "https://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280";
     img.onload = function () {
       _this2.setState({ loaded: true });
     };
