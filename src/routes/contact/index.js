@@ -26,15 +26,15 @@ export default () => (
       <h1 class={style.title}>FRAMP</h1>
       <h2 class={style.subtitle}>
         <span class={`${style.location} ${style.invisible}`}>LONDON</span>{" "}
-        Federico Rampazzo <span class={style.location}>LONDON</span>
+        Federico Rampazzo <span class={style.location}><span class={style.striked}>LONDON</span><br />PAPHOS</span>
       </h2>
       <div class={style.social}>
         <a href="mailto:hi@framp.me?Subject=Hi+Framp">{mail}</a>
         <a href="https://github.com/framp">{github}</a>
         <a href="https://uk.linkedin.com/in/framp">{linkedin}</a>
-        <a href="tel:+447821814477">{phone}</a>
+        <a href="tel:+35794041560">{phone}</a>
       </div>
     </div>
-    {Menu(["blog", "experience", "projects"], "contact")}
+    {Menu(["projects"], "contact")}
   </section>
 );

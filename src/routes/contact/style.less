@@ -42,11 +42,17 @@
     color: darken(white, 6.5);
     user-select: none;
     .location {
+      display: inline-block;
       font-family: 'Open Sans';
       font-weight: 800;
       font-size: 50%;
       color: darken(white, 13.5);
       vertical-align: top;
+      transform: rotate(-10deg) translateY(-10px);
+      .striked {
+        text-decoration: line-through;
+        text-decoration-color: red;
+      }
     }
     .location.invisible {
       color: @nearly_black;

@@ -77,7 +77,7 @@ module.exports =
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"contact":"contact__1INyY","avatar":"avatar__1Rpr8","loaded":"loaded__2hTce","no-js":"no-js__14O-q","fadeIn":"fadeIn__2I9bl","social":"social__1bWFE","title":"title__1sHLG","subtitle":"subtitle__e4UUq","location":"location__AHAAZ","invisible":"invisible__2-dkv","slideDown":"slideDown__ylBtS","slideUp":"slideUp__N6TkU"};
+module.exports = {"contact":"contact__1INyY","avatar":"avatar__1Rpr8","loaded":"loaded__2hTce","no-js":"no-js__14O-q","fadeIn":"fadeIn__2I9bl","social":"social__1bWFE","title":"title__1sHLG","subtitle":"subtitle__e4UUq","location":"location__AHAAZ","striked":"striked__3Zf5W","invisible":"invisible__2-dkv","slideDown":"slideDown__ylBtS","slideUp":"slideUp__N6TkU"};
 
 /***/ }),
 
@@ -619,27 +619,29 @@ var contact_PreloadedAvatar = function (_Component) {
 
 var contact__ref = Object(preact_min["h"])(contact_PreloadedAvatar, null);
 
-var _ref2 = Object(preact_min["h"])(
+var _ref2 = Object(preact_min["h"])("br", null);
+
+var _ref3 = Object(preact_min["h"])(
   "a",
   { href: "mailto:hi@framp.me?Subject=Hi+Framp" },
   mail
 );
 
-var _ref3 = Object(preact_min["h"])(
+var _ref4 = Object(preact_min["h"])(
   "a",
   { href: "https://github.com/framp" },
   github
 );
 
-var _ref4 = Object(preact_min["h"])(
+var _ref5 = Object(preact_min["h"])(
   "a",
   { href: "https://uk.linkedin.com/in/framp" },
   linkedin
 );
 
-var _ref5 = Object(preact_min["h"])(
+var _ref6 = Object(preact_min["h"])(
   "a",
-  { href: "tel:+447821814477" },
+  { href: "tel:+35794041560" },
   phone
 );
 
@@ -669,19 +671,25 @@ var _ref5 = Object(preact_min["h"])(
         Object(preact_min["h"])(
           "span",
           { "class": contact_style_default.a.location },
-          "LONDON"
+          Object(preact_min["h"])(
+            "span",
+            { "class": contact_style_default.a.striked },
+            "LONDON"
+          ),
+          _ref2,
+          "PAPHOS"
         )
       ),
       Object(preact_min["h"])(
         "div",
         { "class": contact_style_default.a.social },
-        _ref2,
         _ref3,
         _ref4,
-        _ref5
+        _ref5,
+        _ref6
       )
     ),
-    menu(["blog", "experience", "projects"], "contact")
+    menu(["projects"], "contact")
   );
 });
 // EXTERNAL MODULE: ./routes/experience/style.less
@@ -1552,7 +1560,7 @@ var app_App = function (_Component) {
       e[n] = t[n];
     }return e;
   }function n(e, t) {
-    null != e && ("function" == typeof e ? e(t) : e.current = t);
+    e && ("function" == typeof e ? e(t) : e.current = t);
   }function o(n, o) {
     return e(n.nodeName, t(t({}, n.attributes), o), arguments.length > 2 ? [].slice.call(arguments, 2) : n.children);
   }function r(e) {
