@@ -1,7 +1,7 @@
 import { h, Component } from "preact";
 import style from "./style";
 import Menu from "../../components/menu";
-import { mail, github, linkedin, phone } from "../../components/social";
+import { mail, github, linkedin, phone, x } from "../../components/social";
 
 class PreloadedAvatar extends Component {
   componentDidMount() {
@@ -29,12 +29,13 @@ export default () => (
         Federico Rampazzo <span class={style.location}><span class={style.striked}>LONDON</span><br />PAPHOS</span>
       </h2>
       <div class={style.social}>
-        <a href="mailto:hi@framp.me?Subject=Hi+Framp">{mail}</a>
-        <a href="https://github.com/framp">{github}</a>
-        <a href="https://uk.linkedin.com/in/framp">{linkedin}</a>
-        <a href="tel:+35794041560">{phone}</a>
+        <a href="mailto:hi@framp.me?Subject=Hi+Framp" target="_blank">{mail}</a>
+        <a href="https://github.com/framp" target="_blank">{github}</a>
+        <a href="https://linkedin.com/in/framp" target="_blank">{linkedin}</a>
+        <a href="https://x.com/air_framp_one" target="_blank">{x}</a>
+        <a href="tel:+35794041560" target="_blank">{phone}</a>
       </div>
     </div>
-    {Menu(["projects"], "contact")}
+    {Menu(["projects", "bio"], "contact")}
   </section>
 );

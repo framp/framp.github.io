@@ -60,3 +60,19 @@ export const phone = (
     <path d="M21 2 L11 2 C10 2 9 3 9 4 L9 28 C9 29 10 30 11 30 L21 30 C22 30 23 29 23 28 L23 4 C23 3 22 2 21 2 Z M9 5 L23 5 M9 27 L23 27" />
   </svg>
 );
+
+export const x = (
+<svg
+  viewBox="-10.2 -10 60 55"
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  fill="none"
+  stroke="#fff"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+>
+  <path d="M39.2,0h7.6L30.2,19.1L49.8,45H34.4l-12-15.7L8.6,45H1l17.8-20.4L0,0h15.8l10.9,14.4L39.2,0z M36.5,40.4h4.2L13.5,4.3H8.9   L36.5,40.4z" />
+</svg>
+);

@@ -1,0 +1,59 @@
+@import "../../style/colors";
+
+.bio {
+  background: @belize_hole;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    max-width: 800px;
+    margin: auto;
+    color: white;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 40px;
+    }
+    p {
+      font-family: 'Source Sans Pro';
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+      text-align: left;
+    }
+    a {
+      color: @belize_hole;
+      text-decoration: none;
+      position: relative;
+      font-weight: 600;
+      background: white;
+      padding: 2px 8px 2px 16px;
+      margin: 0 2px;
+      border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
+      box-shadow: -8px 0 0 -2px rgba(255, 255, 255, 0.6), -12px 0 0 -4px rgba(255, 255, 255, 0.3);
+      transition: transform 0.1s ease;
+      display: inline-block;
+      line-height: 1.4;
+      &:hover {
+        animation: markerWiggle 0.4s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@keyframes markerWiggle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-2px);
+  }
+  75% {
+    transform: translateY(2px);
+  }
+}

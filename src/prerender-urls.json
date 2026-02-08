@@ -1,6 +1,6 @@
 [
   { "url": "/", "title": "Framp" },
   { "url": "/projects", "title": "Framp - Projects" },
-  { "url": "/experience", "title": "Framp - Experience" },
+  { "url": "/bio", "title": "Framp - bio" },
   { "url": "/blog", "title": "Framp - Blog" }
 ]

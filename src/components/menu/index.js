@@ -3,8 +3,7 @@ import style from "./style";
 
 const pages = {
   contact: ["/", "Framp"],
-  experience: ["/experience", "Experience"],
-  blog: ["/blog", "Blog"],
+  bio: ["/bio", "bio"],
   projects: ["/projects", "Projects"]
 };
 

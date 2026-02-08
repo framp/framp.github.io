@@ -7,8 +7,8 @@
     "test": "preact test",
     "pretty": "prettier --write \"src/**/*.js\"",
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "npm run clean && preact build --service-worker false --production --prerender --prerenderUrls src/prerender-urls.json --template src/template.html && cp src/assets/favicon.ico build && mv build/* . && rmdir build",
-    "clean": "find . -not -name CNAME -not -name src -not -name package.json -not -name node_modules -not -name . -not -name .. -not -name .git -not -name .gitignore -maxdepth 1 -print0 | xargs -0 rm -rf",
+    "build": "npm run clean && preact build --no-sw --no-inline-css --prerender --prerenderUrls src/prerender-urls.json --template src/template.html && cp src/assets/favicon.ico build && mv build/* . && rmdir build",
+    "clean": "find . -maxdepth 1 -not -name CNAME -not -name src -not -name package.json -not -name node_modules -not -name . -not -name .. -not -name .git -not -name .gitignore -print0 | xargs -0 rm -rf",
     "dev": "preact watch --template src/template.html"
   },
   "keywords": [],
@@ -17,13 +17,13 @@
   "private": true,
   "devDependencies": {
     "if-env": "^1.0.4",
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
-    "preact-cli": "^2.2.1",
-    "prettier": "^1.15.3"
+    "less": "^4.5.1",
+    "less-loader": "^7.3.0",
+    "preact-cli": "^3.5.1",
+    "prettier": "^3.8.1"
   },
   "dependencies": {
-    "preact": "^8.4.2",
-    "preact-router": "^2.6.1"
+    "preact": "^10.28.3",
+    "preact-router": "^4.1.2"
   }
 }
