@@ -64,20 +64,66 @@ h6 {
   text-align: center;
   height: 100%;
 }
-.contact__sCxRi .avatar__Q\+iBo {
+.contact__sCxRi .avatarWrapper__JkHF6 {
+  position: relative;
   margin: auto;
   margin-top: -310px;
   margin-bottom: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.contact__sCxRi .avatar__Q\+iBo {
+  display: block;
   height: 280px;
   width: 280px;
   border-radius: 140px;
-  background-clip: padding-box;
+  object-fit: cover;
+  background: #7f8c8d;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
-.contact__sCxRi .avatar__Q\+iBo.loaded__XlvmS,
-.contact__sCxRi .no-js__cuVe7 .avatar__Q\+iBo {
-  background: #7f8c8d url("https://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280") no-repeat;
+.contact__sCxRi .avatar__Q\+iBo.loaded__XlvmS {
   animation-name: fadeIn__9Cazk;
   animation-duration: 0.2s;
+}
+.contact__sCxRi .genaiButton__0Q-aW {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s;
+  animation: blinkBorder__dG\+j4 2s infinite;
+}
+.contact__sCxRi .genaiButton__0Q-aW:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  -ms-transform: scale(1.05);
+      transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+@keyframes blinkBorder__dG\+j4 {
+  0%,
+  100% {
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  }
+  50% {
+    border-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.8), 0 0 30px rgba(102, 126, 234, 0.4);
+  }
 }
 .contact__sCxRi .social__vCY0j a:hover {
   border-bottom: 1px solid white;
@@ -129,23 +175,31 @@ h6 {
   animation-name: slideUp__kC6\+G;
 }
 @media (max-height: 890px) {
-  .contact__sCxRi .avatar__Q\+iBo.loaded__XlvmS,
-  .no-js__cuVe7 .contact__sCxRi .avatar__Q\+iBo {
+  .contact__sCxRi .avatarWrapper__JkHF6 {
     margin-top: -210px;
+  }
+  .contact__sCxRi .avatar__Q\+iBo {
     height: 180px;
     width: 180px;
     border-radius: 90px;
-    background-size: 180px;
+  }
+  .contact__sCxRi .genaiButton__0Q-aW {
+    font-size: 12px;
+    padding: 8px 16px;
   }
 }
 @media (max-height: 590px) {
-  .contact__sCxRi .avatar__Q\+iBo.loaded__XlvmS,
-  .no-js__cuVe7 .contact__sCxRi .avatar__Q\+iBo {
+  .contact__sCxRi .avatarWrapper__JkHF6 {
     margin-top: -170px;
+  }
+  .contact__sCxRi .avatar__Q\+iBo {
     height: 140px;
     width: 140px;
     border-radius: 70px;
-    background-size: 140px;
+  }
+  .contact__sCxRi .genaiButton__0Q-aW {
+    font-size: 10px;
+    padding: 6px 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
@@ -480,4 +534,4 @@ h6 {
 }
 /*# sourceMappingURL=style.css.map */
 
-/*# sourceMappingURL=ssr-bundle.40da5.css.map*/
+/*# sourceMappingURL=ssr-bundle.353c0.css.map*/

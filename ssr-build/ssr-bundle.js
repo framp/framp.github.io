@@ -505,7 +505,7 @@ var preact_router_module_E = function E(n) {
 
 // CONCATENATED MODULE: ./routes/contact/style.less
 // extracted by mini-css-extract-plugin
-/* harmony default export */ var style = ({"contact":"contact__sCxRi","avatar":"avatar__Q+iBo","loaded":"loaded__XlvmS","no-js":"no-js__cuVe7","fadeIn":"fadeIn__9Cazk","social":"social__vCY0j","title":"title__dUTMZ","subtitle":"subtitle__91SQE","location":"location__fDc0i","striked":"striked__LkLr+","invisible":"invisible__OqrvE","slideDown":"slideDown__yu7dF","slideUp":"slideUp__kC6+G"});
+/* harmony default export */ var style = ({"contact":"contact__sCxRi","avatarWrapper":"avatarWrapper__JkHF6","avatar":"avatar__Q+iBo","loaded":"loaded__XlvmS","fadeIn":"fadeIn__9Cazk","genaiButton":"genaiButton__0Q-aW","blinkBorder":"blinkBorder__dG+j4","social":"social__vCY0j","title":"title__dUTMZ","subtitle":"subtitle__91SQE","location":"location__fDc0i","striked":"striked__LkLr+","invisible":"invisible__OqrvE","slideDown":"slideDown__yu7dF","slideUp":"slideUp__kC6+G"});
 // CONCATENATED MODULE: ./components/menu/style.less
 // extracted by mini-css-extract-plugin
 /* harmony default export */ var menu_style = ({"menu":"menu__WH8Nx","active":"active__fodEO","contact":"contact__YEoLL","bio":"bio__AKMZL","blog":"blog__HQPby","projects":"projects__RT4-T"});
@@ -535,8 +535,6 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
 function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
 function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }
 function _possibleConstructorReturn(t, e) { if (e && ("object" == _typeof(e) || "function" == typeof e)) return e; if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined"); return _assertThisInitialized(t); }
 function _assertThisInitialized(e) { if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); return e; }
@@ -544,34 +542,69 @@ function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.
 function _getPrototypeOf(t) { return _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) { return t.__proto__ || Object.getPrototypeOf(t); }, _getPrototypeOf(t); }
 function _inherits(t, e) { if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function"); t.prototype = Object.create(e && e.prototype, { constructor: { value: t, writable: !0, configurable: !0 } }), Object.defineProperty(t, "prototype", { writable: !1 }), e && _setPrototypeOf(t, e); }
 function _setPrototypeOf(t, e) { return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) { return t.__proto__ = e, t; }, _setPrototypeOf(t, e); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
 
 
 
 var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
   function PreloadedAvatar() {
+    var _this;
     _classCallCheck(this, PreloadedAvatar);
-    return _callSuper(this, PreloadedAvatar, arguments);
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+    _this = _callSuper(this, PreloadedAvatar, [].concat(args));
+    _defineProperty(_this, "state", {
+      currentVideo: "/assets/videos/idle.mp4",
+      isIdle: true
+    });
+    _defineProperty(_this, "msgOrder", [3, 2, 1, 4]);
+    _defineProperty(_this, "msgIndex", 0);
+    _defineProperty(_this, "handleGenAI", function () {
+      var msgNumber = _this.msgOrder[_this.msgIndex % 4];
+      _this.msgIndex++;
+      _this.setState({
+        currentVideo: "/assets/videos/msg".concat(msgNumber, ".mp4"),
+        isIdle: false
+      });
+    });
+    _defineProperty(_this, "onVideoEnded", function () {
+      if (!_this.state.isIdle) {
+        _this.setState({
+          currentVideo: "/assets/videos/idle.mp4",
+          isIdle: true
+        });
+      }
+    });
+    return _this;
   }
   _inherits(PreloadedAvatar, _Component);
   return _createClass(PreloadedAvatar, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this = this;
-      var img = new Image();
-      img.src = "https://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280";
-      img.onload = function () {
-        _this.setState({
-          loaded: true
-        });
-      };
-    }
-  }, {
     key: "render",
     value: function render() {
+      var _this$state = this.state,
+        currentVideo = _this$state.currentVideo,
+        isIdle = _this$state.isIdle;
       return Object(external_preact_["h"])("div", {
-        class: "".concat(style.avatar, " ").concat(this.state.loaded ? style.loaded : "")
-      });
+        class: style.avatarWrapper
+      }, Object(external_preact_["h"])("video", {
+        key: currentVideo,
+        class: "".concat(style.avatar, " ").concat(style.loaded),
+        autoplay: true,
+        loop: isIdle,
+        muted: isIdle,
+        playsinline: true,
+        onEnded: this.onVideoEnded
+      }, Object(external_preact_["h"])("source", {
+        src: currentVideo,
+        type: "video/mp4"
+      })), isIdle && Object(external_preact_["h"])("button", {
+        class: style.genaiButton,
+        onClick: this.handleGenAI
+      }, "GenAI"));
     }
   }]);
 }(external_preact_["Component"]);
@@ -631,7 +664,7 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
     href: "https://freedsound.com/",
     target: "_blank"
   }, "one"), " became successful enough to pay all my expenses. In 2013, I decided to pursue bigger goals: I co-founded \xA0 ", Object(external_preact_["h"])("a", {
-    href: "http://zensuite.framp.me/",
+    href: "https://zensuite.framp.me/",
     target: "_blank"
   }, "a startup"), " and moved to London to recruit a team."), Object(external_preact_["h"])("p", null, "In 2015, many lessons later, we ran out of money. I got disillusioned with the startup world and started offering my services to the world once more. I then ventured in the corporate and startup world, putting some notches on my career. I started playing around with Machine Learning and exploring a new promising language, Rust."), Object(external_preact_["h"])("p", null, "After adding a few more products under the \xA0 ", Object(external_preact_["h"])("a", {
     href: "https://apiplant.com",
@@ -837,7 +870,7 @@ function app_isNativeReflectConstruct() { try { var t = !Boolean.prototype.value
 function app_getPrototypeOf(t) { return app_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) { return t.__proto__ || Object.getPrototypeOf(t); }, app_getPrototypeOf(t); }
 function app_inherits(t, e) { if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function"); t.prototype = Object.create(e && e.prototype, { constructor: { value: t, writable: !0, configurable: !0 } }), Object.defineProperty(t, "prototype", { writable: !1 }), e && app_setPrototypeOf(t, e); }
 function app_setPrototypeOf(t, e) { return app_setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) { return t.__proto__ = e, t; }, app_setPrototypeOf(t, e); }
-function _defineProperty(e, r, t) { return (r = app_toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function app_defineProperty(e, r, t) { return (r = app_toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function app_toPropertyKey(t) { var i = app_toPrimitive(t, "string"); return "symbol" == app_typeof(i) ? i : i + ""; }
 function app_toPrimitive(t, r) { if ("object" != app_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != app_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
@@ -857,7 +890,7 @@ var app_App = /*#__PURE__*/function (_Component) {
      *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
      *	@param {string} event.url	The newly routed URL
      */
-    _defineProperty(_this, "handleRoute", function (e) {
+    app_defineProperty(_this, "handleRoute", function (e) {
       _this.currentUrl = e.url;
     });
     return _this;

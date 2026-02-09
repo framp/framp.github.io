@@ -4,17 +4,56 @@ import Menu from "../../components/menu";
 import { mail, github, linkedin, phone, x } from "../../components/social";
 
 class PreloadedAvatar extends Component {
-  componentDidMount() {
-    const img = new Image();
-    img.src =
-      "https://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280";
-    img.onload = () => {
-      this.setState({ loaded: true });
-    };
-  }
+  state = {
+    currentVideo: "/assets/videos/idle.mp4",
+    isIdle: true
+  };
+
+  msgOrder = [3, 2, 1, 4];
+  msgIndex = 0;
+
+  handleGenAI = () => {
+    const msgNumber = this.msgOrder[this.msgIndex % 4];
+    this.msgIndex++;
+    this.setState({
+      currentVideo: `/assets/videos/msg${msgNumber}.mp4`,
+      isIdle: false
+    });
+  };
+
+  onVideoEnded = () => {
+    if (!this.state.isIdle) {
+      this.setState({
+        currentVideo: "/assets/videos/idle.mp4",
+        isIdle: true
+      });
+    }
+  };
+
   render() {
+    const { currentVideo, isIdle } = this.state;
     return (
-      <div class={`${style.avatar} ${this.state.loaded ? style.loaded : ""}`} />
+      <div class={style.avatarWrapper}>
+        <video
+          key={currentVideo}
+          class={`${style.avatar} ${style.loaded}`}
+          autoplay
+          loop={isIdle}
+          muted={isIdle}
+          playsinline
+          onEnded={this.onVideoEnded}
+        >
+          <source src={currentVideo} type="video/mp4" />
+        </video>
+        {isIdle && (
+          <button
+            class={style.genaiButton}
+            onClick={this.handleGenAI}
+          >
+            GenAI
+          </button>
+        )}
+      </div>
     );
   }
 }

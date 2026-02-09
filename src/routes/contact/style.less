@@ -9,19 +9,61 @@
   align-items: center;
   text-align: center;
   height: 100%;
-  .avatar {
+  .avatarWrapper {
+    position: relative;
     margin: auto;
     margin-top: -310px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .avatar {
+    display: block;
     height: 280px;
     width: 280px;
     border-radius: 140px;
-    background-clip: padding-box;
+    object-fit: cover;
+    background: @asbestos;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
   }
-  .avatar.loaded, .no-js .avatar{
-    background: @asbestos url("https://gravatar.com/avatar/21fc27a2ac6cd9094a423997f0344a0b?s=280") no-repeat;
+  .avatar.loaded {
     animation-name: fadeIn;
     animation-duration: 0.2s;
+  }
+  .genaiButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s;
+    animation: blinkBorder 2s infinite;
+    &:hover {
+      background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    }
+  }
+  @keyframes blinkBorder {
+    0%, 100% {
+      border-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+      border-color: rgba(255, 255, 255, 1);
+      box-shadow: 0 4px 20px rgba(102, 126, 234, 0.8), 0 0 30px rgba(102, 126, 234, 0.4);
+    }
   }
   .social a:hover {
     border-bottom: 1px solid white; 
@@ -69,21 +111,31 @@
 }
 
 @media (max-height: 890px) { 
-  .contact .avatar.loaded, .no-js .contact .avatar {
+  .contact .avatarWrapper {
     margin-top: -210px;
+  }
+  .contact .avatar {
     height: 180px;
     width: 180px;
     border-radius: 90px;
-    background-size: 180px;
   } 
+  .contact .genaiButton {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
 }
 
 @media (max-height: 590px) { 
-  .contact .avatar.loaded, .no-js .contact .avatar {
+  .contact .avatarWrapper {
     margin-top: -170px;
+  }
+  .contact .avatar {
     height: 140px;
     width: 140px;
     border-radius: 70px;
-    background-size: 140px;
-  } 
+  }
+  .contact .genaiButton {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
 }

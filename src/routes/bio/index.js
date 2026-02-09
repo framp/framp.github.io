@@ -14,7 +14,7 @@ export default () => (
       <p>In 2007 I decided to leave hacking behind and focus entirely on &nbsp; <a href="https://www.freelancer.com/u/framp" target="_blank">freelancing</a>. Eventually I was able to grow a pool of repeated customers and stop competing with developers from LCOL countries. Through countless iterations, the prototype of an API creation framework was born - which would then turn into &nbsp; <a href="https://apiplant.com" target="_blank">APIPlant</a>.</p>
 
       <p>
-        While freelancing, I jumped on the node.js bandwagon and I started building products, until &nbsp; <a href="https://freedsound.com/" target="_blank">one</a> became successful enough to pay all my expenses. In 2013, I decided to pursue bigger goals: I co-founded &nbsp; <a href="http://zensuite.framp.me/" target="_blank">a startup</a> and moved to London to recruit a team.
+        While freelancing, I jumped on the node.js bandwagon and I started building products, until &nbsp; <a href="https://freedsound.com/" target="_blank">one</a> became successful enough to pay all my expenses. In 2013, I decided to pursue bigger goals: I co-founded &nbsp; <a href="https://zensuite.framp.me/" target="_blank">a startup</a> and moved to London to recruit a team.
       </p>
 
       <p>
