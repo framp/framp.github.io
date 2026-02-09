@@ -1,7 +1,7 @@
 {
   "bundle.css": "bundle.8ad16.css",
-  "bundle.js": "bundle.64554.esm.js",
-  "bundle.js.map": "bundle.64554.esm.js.map",
+  "bundle.js": "bundle.54f89.esm.js",
+  "bundle.js.map": "bundle.54f89.esm.js.map",
   "polyfills.js": "polyfills.2821e.esm.js",
   "polyfills.js.map": "polyfills.2821e.esm.js.map",
   "route-bio.css": "route-bio.chunk.5c444.css",
@@ -10,9 +10,9 @@
   "route-contact.css": "route-contact.chunk.85542.css",
   "route-contact.js": "route-contact.chunk.bd000.esm.js",
   "route-contact.js.map": "route-contact.chunk.bd000.esm.js.map",
-  "route-projects.css": "route-projects.chunk.52d85.css",
-  "route-projects.js": "route-projects.chunk.23f7d.esm.js",
-  "route-projects.js.map": "route-projects.chunk.23f7d.esm.js.map",
+  "route-projects.css": "route-projects.chunk.f9560.css",
+  "route-projects.js": "route-projects.chunk.a4f6b.esm.js",
+  "route-projects.js.map": "route-projects.chunk.a4f6b.esm.js.map",
   "assets/browserconfig.xml": "assets/browserconfig.xml",
   "assets/favicon.ico": "assets/favicon.ico",
   "assets/icons/android-icon-144x144.png": "assets/icons/android-icon-144x144.png",
@@ -49,5 +49,5 @@
   "manifest.json": "manifest.json",
   "route-bio.chunk.5c444.css.map": "route-bio.chunk.5c444.css.map",
   "route-contact.chunk.85542.css.map": "route-contact.chunk.85542.css.map",
-  "route-projects.chunk.52d85.css.map": "route-projects.chunk.52d85.css.map"
+  "route-projects.chunk.f9560.css.map": "route-projects.chunk.f9560.css.map"
 }

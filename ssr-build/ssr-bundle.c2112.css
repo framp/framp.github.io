@@ -522,7 +522,7 @@ h6 {
     opacity: 1;
     max-width: 200px;
   }
-  .projects__YxvlF .wall__B2VOg .artworks__crJ1B a[data-type="gap"] p {
+  .projects__YxvlF .wall__B2VOg .artworks__crJ1B a p.mobileHidden__WxSTe {
     display: none;
   }
   .projects__YxvlF .wall__B2VOg .artworks__crJ1B a:hover p {
@@ -534,4 +534,4 @@ h6 {
 }
 /*# sourceMappingURL=style.css.map */
 
-/*# sourceMappingURL=ssr-bundle.353c0.css.map*/
+/*# sourceMappingURL=ssr-bundle.c2112.css.map*/
