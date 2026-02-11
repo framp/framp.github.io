@@ -1,12 +1,12 @@
 {
   "bundle.css": "bundle.8ad16.css",
-  "bundle.js": "bundle.54f89.esm.js",
-  "bundle.js.map": "bundle.54f89.esm.js.map",
+  "bundle.js": "bundle.f6e86.esm.js",
+  "bundle.js.map": "bundle.f6e86.esm.js.map",
   "polyfills.js": "polyfills.2821e.esm.js",
   "polyfills.js.map": "polyfills.2821e.esm.js.map",
-  "route-bio.css": "route-bio.chunk.5c444.css",
-  "route-bio.js": "route-bio.chunk.e6997.esm.js",
-  "route-bio.js.map": "route-bio.chunk.e6997.esm.js.map",
+  "route-bio.css": "route-bio.chunk.a88e4.css",
+  "route-bio.js": "route-bio.chunk.f806b.esm.js",
+  "route-bio.js.map": "route-bio.chunk.f806b.esm.js.map",
   "route-contact.css": "route-contact.chunk.85542.css",
   "route-contact.js": "route-contact.chunk.bd000.esm.js",
   "route-contact.js.map": "route-contact.chunk.bd000.esm.js.map",
@@ -47,7 +47,7 @@
   "assets/videos/msg4.mp4": "assets/videos/msg4.mp4",
   "bundle.8ad16.css.map": "bundle.8ad16.css.map",
   "manifest.json": "manifest.json",
-  "route-bio.chunk.5c444.css.map": "route-bio.chunk.5c444.css.map",
+  "route-bio.chunk.a88e4.css.map": "route-bio.chunk.a88e4.css.map",
   "route-contact.chunk.85542.css.map": "route-contact.chunk.85542.css.map",
   "route-projects.chunk.f9560.css.map": "route-projects.chunk.f9560.css.map"
 }

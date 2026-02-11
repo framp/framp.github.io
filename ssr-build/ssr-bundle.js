@@ -644,7 +644,7 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
 });
 // CONCATENATED MODULE: ./routes/bio/style.less
 // extracted by mini-css-extract-plugin
-/* harmony default export */ var bio_style = ({"bio":"bio__zoIDc","container":"container__nwgDl","markerWiggle":"markerWiggle__+N9bm"});
+/* harmony default export */ var bio_style = ({"bio":"bio__zoIDc","cloud1":"cloud1__buiiz","cloud2":"cloud2__Ev1tz","cloud3":"cloud3__xQebj","cloud4":"cloud4__kxLhV","cloud5":"cloud5__RSpf2","cloud6":"cloud6__L+MhW","cloud7":"cloud7__FhNRT","cloud8":"cloud8__pNZha","cloud9":"cloud9__VLdpG","cloud10":"cloud10__LrYKW","cloud11":"cloud11__waYrK","cloud12":"cloud12__7wzuN","grass":"grass__vmxbS","float1":"float1__on8A3","float2":"float2__ZXQpC","float3":"float3__m4oFx","float4":"float4__D7Dr8","float5":"float5__KtvFX","float6":"float6__wVxXj","container":"container__nwgDl","markerWiggle":"markerWiggle__+N9bm"});
 // CONCATENATED MODULE: ./routes/bio/index.js
 
 
@@ -652,7 +652,371 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
 /* harmony default export */ var bio = (function () {
   return Object(external_preact_["h"])("section", {
     class: bio_style.bio
-  }, Object(external_preact_["h"])("div", {
+  }, Object(external_preact_["h"])("svg", {
+    class: bio_style.cloud1,
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 280 120"
+  }, Object(external_preact_["h"])("ellipse", {
+    cx: "50",
+    cy: "60",
+    rx: "35",
+    ry: "28",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "95",
+    cy: "55",
+    rx: "48",
+    ry: "36",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "145",
+    cy: "60",
+    rx: "60",
+    ry: "48",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "185",
+    cy: "62",
+    rx: "45",
+    ry: "35",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "235",
+    cy: "68",
+    rx: "30",
+    ry: "24",
+    fill: "#3b96d2"
+  })), Object(external_preact_["h"])("svg", {
+    class: bio_style.cloud2,
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 180 85"
+  }, Object(external_preact_["h"])("ellipse", {
+    cx: "30",
+    cy: "48",
+    rx: "24",
+    ry: "18",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "60",
+    cy: "42",
+    rx: "38",
+    ry: "28",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "95",
+    cy: "42",
+    rx: "48",
+    ry: "38",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "130",
+    cy: "48",
+    rx: "22",
+    ry: "16",
+    fill: "#3b96d2"
+  })), Object(external_preact_["h"])("svg", {
+    class: bio_style.cloud3,
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 240 110"
+  }, Object(external_preact_["h"])("ellipse", {
+    cx: "42",
+    cy: "62",
+    rx: "32",
+    ry: "25",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "85",
+    cy: "55",
+    rx: "52",
+    ry: "38",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "135",
+    cy: "55",
+    rx: "58",
+    ry: "44",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "180",
+    cy: "62",
+    rx: "30",
+    ry: "24",
+    fill: "#3b96d2"
+  })), Object(external_preact_["h"])("svg", {
+    class: bio_style.cloud4,
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 190 90"
+  }, Object(external_preact_["h"])("ellipse", {
+    cx: "32",
+    cy: "50",
+    rx: "26",
+    ry: "20",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "65",
+    cy: "45",
+    rx: "38",
+    ry: "28",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "100",
+    cy: "45",
+    rx: "50",
+    ry: "40",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "135",
+    cy: "48",
+    rx: "28",
+    ry: "22",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "160",
+    cy: "52",
+    rx: "22",
+    ry: "18",
+    fill: "#3b96d2"
+  })), Object(external_preact_["h"])("svg", {
+    class: bio_style.cloud5,
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 260 115"
+  }, Object(external_preact_["h"])("ellipse", {
+    cx: "45",
+    cy: "65",
+    rx: "35",
+    ry: "28",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "95",
+    cy: "58",
+    rx: "55",
+    ry: "42",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "150",
+    cy: "58",
+    rx: "62",
+    ry: "48",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "200",
+    cy: "65",
+    rx: "32",
+    ry: "26",
+    fill: "#3b96d2"
+  })), Object(external_preact_["h"])("svg", {
+    class: bio_style.cloud6,
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 150 75"
+  }, Object(external_preact_["h"])("ellipse", {
+    cx: "26",
+    cy: "44",
+    rx: "20",
+    ry: "15",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "52",
+    cy: "40",
+    rx: "32",
+    ry: "24",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "82",
+    cy: "38",
+    rx: "42",
+    ry: "32",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "112",
+    cy: "44",
+    rx: "20",
+    ry: "15",
+    fill: "#3b96d2"
+  })), Object(external_preact_["h"])("svg", {
+    class: bio_style.cloud7,
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 200 90"
+  }, Object(external_preact_["h"])("ellipse", {
+    cx: "35",
+    cy: "50",
+    rx: "28",
+    ry: "22",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "70",
+    cy: "45",
+    rx: "42",
+    ry: "32",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "110",
+    cy: "46",
+    rx: "52",
+    ry: "40",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "150",
+    cy: "50",
+    rx: "32",
+    ry: "25",
+    fill: "#3b96d2"
+  })), Object(external_preact_["h"])("svg", {
+    class: bio_style.cloud8,
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 170 70"
+  }, Object(external_preact_["h"])("ellipse", {
+    cx: "28",
+    cy: "38",
+    rx: "22",
+    ry: "16",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "58",
+    cy: "35",
+    rx: "35",
+    ry: "26",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "95",
+    cy: "36",
+    rx: "38",
+    ry: "30",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "130",
+    cy: "40",
+    rx: "24",
+    ry: "18",
+    fill: "#3b96d2"
+  })), Object(external_preact_["h"])("svg", {
+    class: bio_style.cloud9,
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 220 95"
+  }, Object(external_preact_["h"])("ellipse", {
+    cx: "40",
+    cy: "55",
+    rx: "30",
+    ry: "24",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "78",
+    cy: "50",
+    rx: "45",
+    ry: "35",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "125",
+    cy: "50",
+    rx: "58",
+    ry: "44",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "170",
+    cy: "54",
+    rx: "35",
+    ry: "28",
+    fill: "#3b96d2"
+  })), Object(external_preact_["h"])("svg", {
+    class: bio_style.cloud10,
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 160 68"
+  }, Object(external_preact_["h"])("ellipse", {
+    cx: "26",
+    cy: "38",
+    rx: "24",
+    ry: "18",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "55",
+    cy: "35",
+    rx: "32",
+    ry: "24",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "90",
+    cy: "34",
+    rx: "40",
+    ry: "30",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "125",
+    cy: "38",
+    rx: "26",
+    ry: "20",
+    fill: "#3b96d2"
+  })), Object(external_preact_["h"])("svg", {
+    class: bio_style.cloud11,
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 210 88"
+  }, Object(external_preact_["h"])("ellipse", {
+    cx: "38",
+    cy: "50",
+    rx: "32",
+    ry: "25",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "75",
+    cy: "45",
+    rx: "48",
+    ry: "36",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "120",
+    cy: "46",
+    rx: "55",
+    ry: "42",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "165",
+    cy: "50",
+    rx: "30",
+    ry: "24",
+    fill: "#3b96d2"
+  })), Object(external_preact_["h"])("svg", {
+    class: bio_style.cloud12,
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 180 75"
+  }, Object(external_preact_["h"])("ellipse", {
+    cx: "30",
+    cy: "42",
+    rx: "26",
+    ry: "20",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "62",
+    cy: "38",
+    rx: "38",
+    ry: "28",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "100",
+    cy: "38",
+    rx: "45",
+    ry: "34",
+    fill: "#3b96d2"
+  }), Object(external_preact_["h"])("ellipse", {
+    cx: "140",
+    cy: "42",
+    rx: "28",
+    ry: "22",
+    fill: "#3b96d2"
+  })), Object(external_preact_["h"])("svg", {
+    class: bio_style.grass,
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 1440 120",
+    preserveAspectRatio: "xMidYMax slice"
+  }, Object(external_preact_["h"])("path", {
+    d: "M0,45 Q120,35 240,42 T480,45 T720,38 T960,43 T1200,40 T1440,45 L1440,120 L0,120 Z",
+    fill: "#16a085"
+  }), Object(external_preact_["h"])("path", {
+    d: "M0,58 Q100,50 200,56 T400,60 T600,54 T800,58 T1000,55 T1200,58 T1440,60 L1440,120 L0,120 Z",
+    fill: "#2ecc71",
+    opacity: "0.8"
+  }), Object(external_preact_["h"])("path", {
+    d: "M0,72 Q80,66 160,71 T320,75 T480,70 T640,74 T800,72 T960,75 T1120,72 T1280,74 T1440,75 L1440,120 L0,120 Z",
+    fill: "#16a085",
+    opacity: "0.6"
+  })), Object(external_preact_["h"])("div", {
     class: bio_style.container
   }, Object(external_preact_["h"])("h1", null, "Bio"), Object(external_preact_["h"])("p", null, "In 2005 I became self-aware and started hacking. I learned C++ and AutoIt to write desktop applications; I then moved to the web with PHP and JS. I started a few communities around security and programming and started experimenting with advertising revenue and selling software."), Object(external_preact_["h"])("p", null, "In 2007 I decided to leave hacking behind and focus entirely on \xA0 ", Object(external_preact_["h"])("a", {
     href: "https://www.freelancer.com/u/framp",

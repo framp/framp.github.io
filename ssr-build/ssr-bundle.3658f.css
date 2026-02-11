@@ -315,14 +315,199 @@ h6 {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.bio__zoIDc .cloud1__buiiz,
+.bio__zoIDc .cloud2__Ev1tz,
+.bio__zoIDc .cloud3__xQebj,
+.bio__zoIDc .cloud4__kxLhV,
+.bio__zoIDc .cloud5__RSpf2,
+.bio__zoIDc .cloud6__L\+MhW,
+.bio__zoIDc .cloud7__FhNRT,
+.bio__zoIDc .cloud8__pNZha,
+.bio__zoIDc .cloud9__VLdpG,
+.bio__zoIDc .cloud10__LrYKW,
+.bio__zoIDc .cloud11__waYrK,
+.bio__zoIDc .cloud12__7wzuN {
+  position: absolute;
+  pointer-events: none;
+}
+.bio__zoIDc .grass__vmxbS {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .grass__vmxbS {
+    height: 80px;
+  }
+}
+.bio__zoIDc .cloud1__buiiz {
+  width: 280px;
+  top: 5%;
+  left: 8%;
+  opacity: 0.5;
+  animation: float1__on8A3 45s infinite ease-in-out;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .cloud1__buiiz {
+    width: 160px;
+  }
+}
+.bio__zoIDc .cloud2__Ev1tz {
+  width: 180px;
+  top: 32%;
+  right: 10%;
+  opacity: 0.4;
+  animation: float2__ZXQpC 50s infinite ease-in-out;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .cloud2__Ev1tz {
+    width: 100px;
+    top: 30%;
+  }
+}
+.bio__zoIDc .cloud3__xQebj {
+  width: 240px;
+  top: 38%;
+  left: 55%;
+  opacity: 0.4;
+  animation: float3__m4oFx 40s infinite ease-in-out;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .cloud3__xQebj {
+    width: 140px;
+    top: 35%;
+  }
+}
+.bio__zoIDc .cloud4__kxLhV {
+  width: 190px;
+  top: 28%;
+  right: 25%;
+  opacity: 0.4;
+  animation: float4__D7Dr8 55s infinite ease-in-out;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .cloud4__kxLhV {
+    width: 110px;
+    top: 30%;
+  }
+}
+.bio__zoIDc .cloud5__RSpf2 {
+  width: 260px;
+  top: 42%;
+  left: 15%;
+  opacity: 0.5;
+  animation: float5__KtvFX 48s infinite ease-in-out;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .cloud5__RSpf2 {
+    display: none;
+  }
+}
+.bio__zoIDc .cloud6__L\+MhW {
+  width: 150px;
+  top: 35%;
+  left: 72%;
+  opacity: 0.4;
+  animation: float6__wVxXj 42s infinite ease-in-out;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .cloud6__L\+MhW {
+    display: none;
+  }
+}
+.bio__zoIDc .cloud7__FhNRT {
+  width: 200px;
+  top: 12%;
+  right: 8%;
+  opacity: 0.4;
+  animation: float1__on8A3 38s infinite ease-in-out;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .cloud7__FhNRT {
+    width: 110px;
+  }
+}
+.bio__zoIDc .cloud8__pNZha {
+  width: 170px;
+  bottom: 42%;
+  right: 35%;
+  opacity: 0.4;
+  animation: float3__m4oFx 44s infinite ease-in-out;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .cloud8__pNZha {
+    width: 95px;
+    bottom: 40%;
+  }
+}
+.bio__zoIDc .cloud9__VLdpG {
+  width: 220px;
+  top: 28%;
+  left: 42%;
+  opacity: 0.5;
+  animation: float5__KtvFX 52s infinite ease-in-out;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .cloud9__VLdpG {
+    display: none;
+  }
+}
+.bio__zoIDc .cloud10__LrYKW {
+  width: 160px;
+  top: 38%;
+  left: 28%;
+  opacity: 0.4;
+  animation: float2__ZXQpC 46s infinite ease-in-out;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .cloud10__LrYKW {
+    width: 90px;
+  }
+}
+.bio__zoIDc .cloud11__waYrK {
+  width: 210px;
+  bottom: 58%;
+  left: 5%;
+  opacity: 0.5;
+  animation: float4__D7Dr8 50s infinite ease-in-out;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .cloud11__waYrK {
+    display: none;
+  }
+}
+.bio__zoIDc .cloud12__7wzuN {
+  width: 180px;
+  top: 25%;
+  right: 42%;
+  opacity: 0.4;
+  animation: float6__wVxXj 43s infinite ease-in-out;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .cloud12__7wzuN {
+    width: 100px;
+  }
 }
 .bio__zoIDc .container__nwgDl {
   max-width: 800px;
   margin: auto;
   color: white;
   box-sizing: border-box;
-  padding: 40px;
+  padding: 40px 40px 160px 40px;
   text-align: center;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .bio__zoIDc .container__nwgDl {
+    padding: 40px 40px 120px 40px;
+  }
 }
 .bio__zoIDc .container__nwgDl h1 {
   font-family: 'Great Vibes', cursive;
@@ -353,6 +538,81 @@ h6 {
 }
 .bio__zoIDc .container__nwgDl a:hover {
   animation: markerWiggle__\+N9bm 0.4s ease-in-out infinite;
+}
+@keyframes float1__on8A3 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, -15px);
+  }
+  50% {
+    transform: translate(-10px, 10px);
+  }
+  75% {
+    transform: translate(15px, 5px);
+  }
+}
+@keyframes float2__ZXQpC {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-25px, 12px);
+  }
+  66% {
+    transform: translate(10px, -8px);
+  }
+}
+@keyframes float3__m4oFx {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(15px, 10px);
+  }
+  60% {
+    transform: translate(-20px, -12px);
+  }
+}
+@keyframes float4__D7Dr8 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  40% {
+    transform: translate(-18px, -10px);
+  }
+  80% {
+    transform: translate(22px, 15px);
+  }
+}
+@keyframes float5__KtvFX {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  35% {
+    transform: translate(25px, -18px);
+  }
+  70% {
+    transform: translate(-15px, 10px);
+  }
+}
+@keyframes float6__wVxXj {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  45% {
+    transform: translate(-20px, 12px);
+  }
+  90% {
+    transform: translate(18px, -15px);
+  }
 }
 @keyframes markerWiggle__\+N9bm {
   0%,
@@ -534,4 +794,4 @@ h6 {
 }
 /*# sourceMappingURL=style.css.map */
 
-/*# sourceMappingURL=ssr-bundle.c2112.css.map*/
+/*# sourceMappingURL=ssr-bundle.3658f.css.map*/

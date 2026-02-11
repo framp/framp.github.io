@@ -6,13 +6,159 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  .cloud1, .cloud2, .cloud3, .cloud4, .cloud5, .cloud6, .cloud7, .cloud8, .cloud9, .cloud10, .cloud11, .cloud12 {
+    position: absolute;
+    pointer-events: none;
+  }
+  .grass {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    pointer-events: none;
+    @media (max-width: 768px) {
+      height: 80px;
+    }
+  }
+  .cloud1 {
+    width: 280px;
+    top: 5%;
+    left: 8%;
+    opacity: 0.5;
+    animation: float1 45s infinite ease-in-out;
+    @media (max-width: 768px) {
+      width: 160px;
+    }
+  }
+  .cloud2 {
+    width: 180px;
+    top: 32%;
+    right: 10%;
+    opacity: 0.4;
+    animation: float2 50s infinite ease-in-out;
+    @media (max-width: 768px) {
+      width: 100px;
+      top: 30%;
+    }
+  }
+  .cloud3 {
+    width: 240px;
+    top: 38%;
+    left: 55%;
+    opacity: 0.4;
+    animation: float3 40s infinite ease-in-out;
+    @media (max-width: 768px) {
+      width: 140px;
+      top: 35%;
+    }
+  }
+  .cloud4 {
+    width: 190px;
+    top: 28%;
+    right: 25%;
+    opacity: 0.4;
+    animation: float4 55s infinite ease-in-out;
+    @media (max-width: 768px) {
+      width: 110px;
+      top: 30%;
+    }
+  }
+  .cloud5 {
+    width: 260px;
+    top: 42%;
+    left: 15%;
+    opacity: 0.5;
+    animation: float5 48s infinite ease-in-out;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .cloud6 {
+    width: 150px;
+    top: 35%;
+    left: 72%;
+    opacity: 0.4;
+    animation: float6 42s infinite ease-in-out;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .cloud7 {
+    width: 200px;
+    top: 12%;
+    right: 8%;
+    opacity: 0.4;
+    animation: float1 38s infinite ease-in-out;
+    @media (max-width: 768px) {
+      width: 110px;
+    }
+  }
+  .cloud8 {
+    width: 170px;
+    bottom: 42%;
+    right: 35%;
+    opacity: 0.4;
+    animation: float3 44s infinite ease-in-out;
+    @media (max-width: 768px) {
+      width: 95px;
+      bottom: 40%;
+    }
+  }
+  .cloud9 {
+    width: 220px;
+    top: 28%;
+    left: 42%;
+    opacity: 0.5;
+    animation: float5 52s infinite ease-in-out;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .cloud10 {
+    width: 160px;
+    top: 38%;
+    left: 28%;
+    opacity: 0.4;
+    animation: float2 46s infinite ease-in-out;
+    @media (max-width: 768px) {
+      width: 90px;
+    }
+  }
+  .cloud11 {
+    width: 210px;
+    bottom: 58%;
+    left: 5%;
+    opacity: 0.5;
+    animation: float4 50s infinite ease-in-out;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .cloud12 {
+    width: 180px;
+    top: 25%;
+    right: 42%;
+    opacity: 0.4;
+    animation: float6 43s infinite ease-in-out;
+    @media (max-width: 768px) {
+      width: 100px;
+    }
+  }
   .container {
     max-width: 800px;
     margin: auto;
     color: white;
     box-sizing: border-box;
-    padding: 40px;
+    padding: 40px 40px 160px 40px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+    @media (max-width: 768px) {
+      padding: 40px 40px 120px 40px;
+    }
     h1 {
       font-family: 'Great Vibes', cursive;
       font-size: 48px;
@@ -44,6 +190,43 @@
       }
     }
   }
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(20px, -15px); }
+  50% { transform: translate(-10px, 10px); }
+  75% { transform: translate(15px, 5px); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(-25px, 12px); }
+  66% { transform: translate(10px, -8px); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0); }
+  30% { transform: translate(15px, 10px); }
+  60% { transform: translate(-20px, -12px); }
+}
+
+@keyframes float4 {
+  0%, 100% { transform: translate(0, 0); }
+  40% { transform: translate(-18px, -10px); }
+  80% { transform: translate(22px, 15px); }
+}
+
+@keyframes float5 {
+  0%, 100% { transform: translate(0, 0); }
+  35% { transform: translate(25px, -18px); }
+  70% { transform: translate(-15px, 10px); }
+}
+
+@keyframes float6 {
+  0%, 100% { transform: translate(0, 0); }
+  45% { transform: translate(-20px, 12px); }
+  90% { transform: translate(18px, -15px); }
 }
 
 @keyframes markerWiggle {
