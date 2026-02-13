@@ -579,6 +579,11 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
         });
       }
     });
+    _defineProperty(_this, "handleIdleClick", function () {
+      if (_this.state.isIdle) {
+        _this.msgIndex++;
+      }
+    });
     return _this;
   }
   _inherits(PreloadedAvatar, _Component);
@@ -597,7 +602,8 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
         loop: isIdle,
         muted: isIdle,
         playsinline: true,
-        onEnded: this.onVideoEnded
+        onEnded: this.onVideoEnded,
+        onClick: this.handleIdleClick
       }, Object(external_preact_["h"])("source", {
         src: currentVideo,
         type: "video/mp4"

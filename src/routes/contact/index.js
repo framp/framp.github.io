@@ -30,6 +30,12 @@ class PreloadedAvatar extends Component {
     }
   };
 
+  handleIdleClick = () => {
+    if (this.state.isIdle) {
+      this.msgIndex++;
+    }
+  };
+
   render() {
     const { currentVideo, isIdle } = this.state;
     return (
@@ -42,6 +48,7 @@ class PreloadedAvatar extends Component {
           muted={isIdle}
           playsinline
           onEnded={this.onVideoEnded}
+          onClick={this.handleIdleClick}
         >
           <source src={currentVideo} type="video/mp4" />
         </video>
