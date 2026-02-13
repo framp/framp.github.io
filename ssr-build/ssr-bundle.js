@@ -505,7 +505,7 @@ var preact_router_module_E = function E(n) {
 
 // CONCATENATED MODULE: ./routes/contact/style.less
 // extracted by mini-css-extract-plugin
-/* harmony default export */ var style = ({"contact":"contact__sCxRi","avatarWrapper":"avatarWrapper__JkHF6","avatar":"avatar__Q+iBo","loaded":"loaded__XlvmS","fadeIn":"fadeIn__9Cazk","genaiButton":"genaiButton__0Q-aW","blinkBorder":"blinkBorder__dG+j4","social":"social__vCY0j","title":"title__dUTMZ","subtitle":"subtitle__91SQE","location":"location__fDc0i","striked":"striked__LkLr+","invisible":"invisible__OqrvE","slideDown":"slideDown__yu7dF","slideUp":"slideUp__kC6+G"});
+/* harmony default export */ var style = ({"contact":"contact__sCxRi","avatarWrapper":"avatarWrapper__JkHF6","avatar":"avatar__Q+iBo","loaded":"loaded__XlvmS","fadeIn":"fadeIn__9Cazk","genaiButton":"genaiButton__0Q-aW","bounce":"bounce__sspM0","social":"social__vCY0j","title":"title__dUTMZ","subtitle":"subtitle__91SQE","location":"location__fDc0i","striked":"striked__LkLr+","invisible":"invisible__OqrvE","slideDown":"slideDown__yu7dF","slideUp":"slideUp__kC6+G","ctaButton":"ctaButton__w+q04","pulse":"pulse__uUPxD"});
 // CONCATENATED MODULE: ./components/menu/style.less
 // extracted by mini-css-extract-plugin
 /* harmony default export */ var menu_style = ({"menu":"menu__WH8Nx","active":"active__fodEO","contact":"contact__YEoLL","bio":"bio__AKMZL","blog":"blog__HQPby","projects":"projects__RT4-T"});
@@ -640,7 +640,12 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
   }, social["e" /* x */]), Object(external_preact_["h"])("a", {
     href: "tel:+35794041560",
     target: "_blank"
-  }, social["d" /* phone */]))), menu(["projects", "bio"], "contact"));
+  }, social["d" /* phone */])), Object(external_preact_["h"])("a", {
+    href: "https://apiplant.com",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    class: style.ctaButton
+  }, "Hire me on APIPlant.com")), menu(["projects", "bio"], "contact"));
 });
 // CONCATENATED MODULE: ./routes/bio/style.less
 // extracted by mini-css-extract-plugin

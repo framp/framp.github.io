@@ -91,38 +91,44 @@ h6 {
 }
 .contact__sCxRi .genaiButton__0Q-aW {
   position: absolute;
-  top: 0;
-  right: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  top: 10px;
+  right: 20px;
+  background: black;
   color: white;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 20px;
+  border: 2px solid white;
+  border-radius: 999px;
   padding: 10px 20px;
   cursor: pointer;
   font-family: 'Open Sans';
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-  transition: all 0.3s;
-  animation: blinkBorder__dG\+j4 2s infinite;
+  transition: background 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .contact__sCxRi .genaiButton__0Q-aW:hover {
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-  -ms-transform: scale(1.05);
-      transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+  background: #444;
+  animation: bounce__sspM0 1s infinite;
 }
-@keyframes blinkBorder__dG\+j4 {
+@keyframes pulse__uUPxD {
   0%,
   100% {
-    border-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
   50% {
-    border-color: #ffffff;
-    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.8), 0 0 30px rgba(102, 126, 234, 0.4);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+@keyframes bounce__sspM0 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
   }
 }
 .contact__sCxRi .social__vCY0j a:hover {
@@ -173,6 +179,27 @@ h6 {
 }
 .contact__sCxRi .social__vCY0j {
   animation-name: slideUp__kC6\+G;
+}
+.contact__sCxRi .ctaButton__w\+q04 {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 32px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 999px;
+  border: 2px solid white;
+  transition: background 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.contact__sCxRi .ctaButton__w\+q04:hover {
+  background: #444;
+  animation: bounce__sspM0 1s infinite;
 }
 @media (max-height: 890px) {
   .contact__sCxRi .avatarWrapper__JkHF6 {
@@ -795,4 +822,4 @@ h6 {
 }
 /*# sourceMappingURL=style.css.map */
 
-/*# sourceMappingURL=ssr-bundle.2a6b8.css.map*/
+/*# sourceMappingURL=ssr-bundle.0d632.css.map*/

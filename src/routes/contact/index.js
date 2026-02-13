@@ -74,6 +74,9 @@ export default () => (
         <a href="https://x.com/air_framp_one" target="_blank">{x}</a>
         <a href="tel:+35794041560" target="_blank">{phone}</a>
       </div>
+      <a href="https://apiplant.com" target="_blank" rel="noopener noreferrer" class={style.ctaButton}>
+        Hire me on APIPlant.com
+      </a>
     </div>
     {Menu(["projects", "bio"], "contact")}
   </section>
