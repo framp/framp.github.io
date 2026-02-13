@@ -7,7 +7,7 @@
     "test": "preact test",
     "pretty": "prettier --write \"src/**/*.js\"",
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "npm run clean && preact build --no-sw --no-inline-css --prerender --prerenderUrls src/prerender-urls.json --template src/template.html && cp src/assets/favicon.ico build && mv build/* . && rmdir build",
+    "build": "npm run clean && preact build --no-sw --no-inline-css --prerender --prerenderUrls src/prerender-urls.json --template src/template.html && cp src/assets/favicon.ico build && cp src/sw.js build && mv build/* . && rmdir build",
     "clean": "find . -maxdepth 1 -not -name CNAME -not -name src -not -name package.json -not -name node_modules -not -name . -not -name .. -not -name .git -not -name .gitignore -print0 | xargs -0 rm -rf",
     "dev": "preact watch --template src/template.html"
   },

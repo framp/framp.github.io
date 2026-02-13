@@ -29,9 +29,12 @@ class PreloadedAvatar extends Component {
   onMessageEnded = () => {
     this.setState({
       showMessage: false,
-      messageVideo: null,
       messageLoaded: false
     });
+    // Keep messageVideo for a moment to fade out smoothly
+    setTimeout(() => {
+      this.setState({ messageVideo: null });
+    }, 300);
   };
 
   handleIdleClick = () => {
@@ -51,7 +54,6 @@ class PreloadedAvatar extends Component {
           muted
           playsinline
           onClick={this.handleIdleClick}
-          style={{ opacity: showMessage ? 0 : 1 }}
         >
           <source src="/assets/videos/idle.mp4" type="video/mp4" />
         </video>

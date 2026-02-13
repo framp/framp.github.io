@@ -581,9 +581,14 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
     _defineProperty(_this, "onMessageEnded", function () {
       _this.setState({
         showMessage: false,
-        messageVideo: null,
         messageLoaded: false
       });
+      // Keep messageVideo for a moment to fade out smoothly
+      setTimeout(function () {
+        _this.setState({
+          messageVideo: null
+        });
+      }, 300);
     });
     _defineProperty(_this, "handleIdleClick", function () {
       if (!_this.state.showMessage) {
@@ -608,10 +613,7 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
         loop: true,
         muted: true,
         playsinline: true,
-        onClick: this.handleIdleClick,
-        style: {
-          opacity: showMessage ? 0 : 1
-        }
+        onClick: this.handleIdleClick
       }, Object(external_preact_["h"])("source", {
         src: "/assets/videos/idle.mp4",
         type: "video/mp4"
@@ -1313,6 +1315,11 @@ var app_App = /*#__PURE__*/function (_Component) {
 // CONCATENATED MODULE: ./index.js
 
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
 /* harmony default export */ var index = __webpack_exports__["default"] = (app_App);
 
 /***/ }),
