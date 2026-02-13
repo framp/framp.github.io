@@ -65,7 +65,10 @@ class PreloadedAvatar extends Component {
             playsinline
             onEnded={this.onMessageEnded}
             onLoadedData={this.onMessageLoaded}
-            style={{ opacity: showMessage && messageLoaded ? 1 : 0 }}
+            style={{ 
+              opacity: showMessage && messageLoaded ? 1 : 0,
+              visibility: showMessage && messageLoaded ? 'visible' : 'hidden'
+            }}
           >
             <source src={messageVideo} type="video/mp4" />
           </video>

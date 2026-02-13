@@ -625,7 +625,8 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
         onEnded: this.onMessageEnded,
         onLoadedData: this.onMessageLoaded,
         style: {
-          opacity: showMessage && messageLoaded ? 1 : 0
+          opacity: showMessage && messageLoaded ? 1 : 0,
+          visibility: showMessage && messageLoaded ? 'visible' : 'hidden'
         }
       }, Object(external_preact_["h"])("source", {
         src: messageVideo,
