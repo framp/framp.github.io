@@ -5,8 +5,9 @@ import { mail, github, linkedin, phone, x } from "../../components/social";
 
 class PreloadedAvatar extends Component {
   state = {
-    currentVideo: "/assets/videos/idle.mp4",
-    isIdle: true
+    messageVideo: null,
+    showMessage: false,
+    messageLoaded: false
   };
 
   msgOrder = [3, 2, 1, 4];
@@ -16,43 +17,58 @@ class PreloadedAvatar extends Component {
     const msgNumber = this.msgOrder[this.msgIndex % 4];
     this.msgIndex++;
     this.setState({
-      currentVideo: `/assets/videos/msg${msgNumber}.mp4`,
-      isIdle: false
+      messageVideo: `/assets/videos/msg${msgNumber}.mp4`,
+      messageLoaded: false
     });
   };
 
-  onVideoEnded = () => {
-    if (!this.state.isIdle) {
-      this.setState({
-        currentVideo: "/assets/videos/idle.mp4",
-        isIdle: true
-      });
-    }
+  onMessageLoaded = () => {
+    this.setState({ showMessage: true, messageLoaded: true });
+  };
+
+  onMessageEnded = () => {
+    this.setState({
+      showMessage: false,
+      messageVideo: null,
+      messageLoaded: false
+    });
   };
 
   handleIdleClick = () => {
-    if (this.state.isIdle) {
+    if (!this.state.showMessage) {
       this.msgIndex++;
     }
   };
 
   render() {
-    const { currentVideo, isIdle } = this.state;
+    const { messageVideo, showMessage, messageLoaded } = this.state;
     return (
       <div class={style.avatarWrapper}>
         <video
-          key={currentVideo}
           class={`${style.avatar} ${style.loaded}`}
           autoplay
-          loop={isIdle}
-          muted={isIdle}
+          loop
+          muted
           playsinline
-          onEnded={this.onVideoEnded}
           onClick={this.handleIdleClick}
+          style={{ opacity: showMessage ? 0 : 1 }}
         >
-          <source src={currentVideo} type="video/mp4" />
+          <source src="/assets/videos/idle.mp4" type="video/mp4" />
         </video>
-        {isIdle && (
+        {messageVideo && (
+          <video
+            key={messageVideo}
+            class={`${style.avatar} ${style.loaded} ${style.messageVideo}`}
+            autoplay
+            playsinline
+            onEnded={this.onMessageEnded}
+            onLoadedData={this.onMessageLoaded}
+            style={{ opacity: showMessage && messageLoaded ? 1 : 0 }}
+          >
+            <source src={messageVideo} type="video/mp4" />
+          </video>
+        )}
+        {!showMessage && (
           <button
             class={style.genaiButton}
             onClick={this.handleGenAI}

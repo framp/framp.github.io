@@ -26,10 +26,17 @@
     object-fit: cover;
     background: @asbestos;
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease-in-out;
   }
   .avatar.loaded {
     animation-name: fadeIn;
     animation-duration: 0.2s;
+  }
+  .messageVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .genaiButton {
     position: absolute;

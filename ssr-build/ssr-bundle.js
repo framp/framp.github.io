@@ -505,7 +505,7 @@ var preact_router_module_E = function E(n) {
 
 // CONCATENATED MODULE: ./routes/contact/style.less
 // extracted by mini-css-extract-plugin
-/* harmony default export */ var style = ({"contact":"contact__sCxRi","avatarWrapper":"avatarWrapper__JkHF6","avatar":"avatar__Q+iBo","loaded":"loaded__XlvmS","fadeIn":"fadeIn__9Cazk","genaiButton":"genaiButton__0Q-aW","bounce":"bounce__sspM0","social":"social__vCY0j","title":"title__dUTMZ","subtitle":"subtitle__91SQE","location":"location__fDc0i","striked":"striked__LkLr+","invisible":"invisible__OqrvE","slideDown":"slideDown__yu7dF","slideUp":"slideUp__kC6+G","ctaButton":"ctaButton__w+q04","pulse":"pulse__uUPxD"});
+/* harmony default export */ var style = ({"contact":"contact__sCxRi","avatarWrapper":"avatarWrapper__JkHF6","avatar":"avatar__Q+iBo","loaded":"loaded__XlvmS","fadeIn":"fadeIn__9Cazk","messageVideo":"messageVideo__Ek+Pq","genaiButton":"genaiButton__0Q-aW","bounce":"bounce__sspM0","social":"social__vCY0j","title":"title__dUTMZ","subtitle":"subtitle__91SQE","location":"location__fDc0i","striked":"striked__LkLr+","invisible":"invisible__OqrvE","slideDown":"slideDown__yu7dF","slideUp":"slideUp__kC6+G","ctaButton":"ctaButton__w+q04","pulse":"pulse__uUPxD"});
 // CONCATENATED MODULE: ./components/menu/style.less
 // extracted by mini-css-extract-plugin
 /* harmony default export */ var menu_style = ({"menu":"menu__WH8Nx","active":"active__fodEO","contact":"contact__YEoLL","bio":"bio__AKMZL","blog":"blog__HQPby","projects":"projects__RT4-T"});
@@ -558,8 +558,9 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
     }
     _this = _callSuper(this, PreloadedAvatar, [].concat(args));
     _defineProperty(_this, "state", {
-      currentVideo: "/assets/videos/idle.mp4",
-      isIdle: true
+      messageVideo: null,
+      showMessage: false,
+      messageLoaded: false
     });
     _defineProperty(_this, "msgOrder", [3, 2, 1, 4]);
     _defineProperty(_this, "msgIndex", 0);
@@ -567,20 +568,25 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
       var msgNumber = _this.msgOrder[_this.msgIndex % 4];
       _this.msgIndex++;
       _this.setState({
-        currentVideo: "/assets/videos/msg".concat(msgNumber, ".mp4"),
-        isIdle: false
+        messageVideo: "/assets/videos/msg".concat(msgNumber, ".mp4"),
+        messageLoaded: false
       });
     });
-    _defineProperty(_this, "onVideoEnded", function () {
-      if (!_this.state.isIdle) {
-        _this.setState({
-          currentVideo: "/assets/videos/idle.mp4",
-          isIdle: true
-        });
-      }
+    _defineProperty(_this, "onMessageLoaded", function () {
+      _this.setState({
+        showMessage: true,
+        messageLoaded: true
+      });
+    });
+    _defineProperty(_this, "onMessageEnded", function () {
+      _this.setState({
+        showMessage: false,
+        messageVideo: null,
+        messageLoaded: false
+      });
     });
     _defineProperty(_this, "handleIdleClick", function () {
-      if (_this.state.isIdle) {
+      if (!_this.state.showMessage) {
         _this.msgIndex++;
       }
     });
@@ -591,23 +597,38 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       var _this$state = this.state,
-        currentVideo = _this$state.currentVideo,
-        isIdle = _this$state.isIdle;
+        messageVideo = _this$state.messageVideo,
+        showMessage = _this$state.showMessage,
+        messageLoaded = _this$state.messageLoaded;
       return Object(external_preact_["h"])("div", {
         class: style.avatarWrapper
       }, Object(external_preact_["h"])("video", {
-        key: currentVideo,
         class: "".concat(style.avatar, " ").concat(style.loaded),
         autoplay: true,
-        loop: isIdle,
-        muted: isIdle,
+        loop: true,
+        muted: true,
         playsinline: true,
-        onEnded: this.onVideoEnded,
-        onClick: this.handleIdleClick
+        onClick: this.handleIdleClick,
+        style: {
+          opacity: showMessage ? 0 : 1
+        }
       }, Object(external_preact_["h"])("source", {
-        src: currentVideo,
+        src: "/assets/videos/idle.mp4",
         type: "video/mp4"
-      })), isIdle && Object(external_preact_["h"])("button", {
+      })), messageVideo && Object(external_preact_["h"])("video", {
+        key: messageVideo,
+        class: "".concat(style.avatar, " ").concat(style.loaded, " ").concat(style.messageVideo),
+        autoplay: true,
+        playsinline: true,
+        onEnded: this.onMessageEnded,
+        onLoadedData: this.onMessageLoaded,
+        style: {
+          opacity: showMessage && messageLoaded ? 1 : 0
+        }
+      }, Object(external_preact_["h"])("source", {
+        src: messageVideo,
+        type: "video/mp4"
+      })), !showMessage && Object(external_preact_["h"])("button", {
         class: style.genaiButton,
         onClick: this.handleGenAI
       }, "GenAI"));
