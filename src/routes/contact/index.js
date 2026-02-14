@@ -65,7 +65,7 @@ class PreloadedAvatar extends Component {
             playsinline
             onEnded={this.onMessageEnded}
             onLoadedData={this.onMessageLoaded}
-            style={{ 
+            style={{
               opacity: showMessage && messageLoaded ? 1 : 0,
               visibility: showMessage && messageLoaded ? 'visible' : 'hidden'
             }}
@@ -103,7 +103,7 @@ export default () => (
         <a href="tel:+35794041560" target="_blank">{phone}</a>
       </div>
       <a href="https://apiplant.com" target="_blank" rel="noopener noreferrer" class={style.ctaButton}>
-        Hire me on APIPlant.com
+        Work with me on APIPlant.com
       </a>
     </div>
     {Menu(["projects", "bio"], "contact")}

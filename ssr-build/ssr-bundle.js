@@ -675,7 +675,7 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
     target: "_blank",
     rel: "noopener noreferrer",
     class: style.ctaButton
-  }, "Hire me on APIPlant.com")), menu(["projects", "bio"], "contact"));
+  }, "Work with me on APIPlant.com")), menu(["projects", "bio"], "contact"));
 });
 // CONCATENATED MODULE: ./routes/bio/style.less
 // extracted by mini-css-extract-plugin
