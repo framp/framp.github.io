@@ -13,6 +13,17 @@ class PreloadedAvatar extends Component {
   msgOrder = [3, 2, 1, 4];
   msgIndex = 0;
 
+  componentDidMount() {
+    const hash = window.location.hash;
+    const match = hash.match(/^#(\d+)$/);
+    if (match) {
+      const n = parseInt(match[1], 10);
+      if (n >= 1 && n <= this.msgOrder.length) {
+        this.msgIndex = n - 1;
+      }
+    }
+  }
+
   handleGenAI = () => {
     const msgNumber = this.msgOrder[this.msgIndex % 4];
     this.msgIndex++;

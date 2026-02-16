@@ -599,6 +599,18 @@ var contact_PreloadedAvatar = /*#__PURE__*/function (_Component) {
   }
   _inherits(PreloadedAvatar, _Component);
   return _createClass(PreloadedAvatar, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var hash = window.location.hash;
+      var match = hash.match(/^#(\d+)$/);
+      if (match) {
+        var n = parseInt(match[1], 10);
+        if (n >= 1 && n <= this.msgOrder.length) {
+          this.msgIndex = n - 1;
+        }
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this$state = this.state,
