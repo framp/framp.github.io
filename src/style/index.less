@@ -3,6 +3,7 @@ html, body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	background: black;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -14,4 +15,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #app {
 	height: 100%;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	&.ready {
+		opacity: 1;
+	}
 }

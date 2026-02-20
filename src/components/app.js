@@ -14,6 +14,10 @@ export default class App extends Component {
     this.currentUrl = e.url;
   };
 
+  componentDidMount() {
+    document.getElementById('app').classList.add('ready');
+  }
+
   render() {
     return (
       <div id="app">

@@ -1308,6 +1308,11 @@ var app_App = /*#__PURE__*/function (_Component) {
   }
   app_inherits(App, _Component);
   return app_createClass(App, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      document.getElementById('app').classList.add('ready');
+    }
+  }, {
     key: "render",
     value: function render() {
       return Object(external_preact_["h"])("div", {
